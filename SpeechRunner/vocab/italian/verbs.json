@@ -1,0 +1,5766 @@
+{
+  "metadata": {
+    "language": "italian",
+    "part_of_speech": "verbs",
+    "version": "1.0",
+    "last_updated": "2024-01-15"
+  },
+  "verbs": [
+    {
+      "infinitive": "parlare",
+      "infinitive_english": "to speak",
+      "verb_type": "regular",
+      "conjugation_group": "-are",
+      "difficulty_level": "beginner",
+      "tenses": {
+        "presente": {
+          "forms": {
+            "io": {
+              "form": "parlo",
+              "english": "I speak"
+            },
+            "tu": {
+              "form": "parli",
+              "english": "you speak"
+            },
+            "lui": {
+              "form": "parla",
+              "english": "he speaks"
+            },
+            "lei": {
+              "form": "parla",
+              "english": "she speaks"
+            },
+            "Lei": {
+              "form": "parla",
+              "english": "you speak (formal)"
+            },
+            "noi": {
+              "form": "parliamo",
+              "english": "we speak"
+            },
+            "voi": {
+              "form": "parlate",
+              "english": "you all speak"
+            },
+            "loro": {
+              "form": "parlano",
+              "english": "they speak"
+            }
+          }
+        },
+        "passato_prossimo": {
+          "forms": {
+            "io": {
+              "form": "ho parlato",
+              "english": "I spoke/have spoken"
+            },
+            "tu": {
+              "form": "hai parlato",
+              "english": "you spoke/have spoken"
+            },
+            "lui": {
+              "form": "ha parlato",
+              "english": "he spoke/has spoken"
+            },
+            "lei": {
+              "form": "ha parlato",
+              "english": "she spoke/has spoken"
+            },
+            "Lei": {
+              "form": "ha parlato",
+              "english": "you spoke/have spoken (formal)"
+            },
+            "noi": {
+              "form": "abbiamo parlato",
+              "english": "we spoke/have spoken"
+            },
+            "voi": {
+              "form": "avete parlato",
+              "english": "you all spoke/have spoken"
+            },
+            "loro": {
+              "form": "hanno parlato",
+              "english": "they spoke/have spoken"
+            }
+          }
+        },
+        "futuro_semplice": {
+          "forms": {
+            "io": {
+              "form": "parlerò",
+              "english": "I will speak"
+            },
+            "tu": {
+              "form": "parlerai",
+              "english": "you will speak"
+            },
+            "lui": {
+              "form": "parlerà",
+              "english": "he will speak"
+            },
+            "lei": {
+              "form": "parlerà",
+              "english": "she will speak"
+            },
+            "Lei": {
+              "form": "parlerà",
+              "english": "you will speak (formal)"
+            },
+            "noi": {
+              "form": "parleremo",
+              "english": "we will speak"
+            },
+            "voi": {
+              "form": "parlerete",
+              "english": "you all will speak"
+            },
+            "loro": {
+              "form": "parleranno",
+              "english": "they will speak"
+            }
+          }
+        }
+      },
+      "characteristics": {
+        "transitive": true,
+        "reflexive": false,
+        "auxiliary_verb": "avere",
+        "prepositions_used": [
+          "di",
+          "con"
+        ]
+      },
+      "tags": [
+        "common",
+        "communication",
+        "a1_level"
+      ]
+    },
+    {
+      "infinitive": "essere",
+      "infinitive_english": "to be",
+      "verb_type": "irregular",
+      "conjugation_group": "irregular",
+      "difficulty_level": "beginner",
+      "tenses": {
+        "presente": {
+          "forms": {
+            "io": {
+              "form": "sono",
+              "english": "I am"
+            },
+            "tu": {
+              "form": "sei",
+              "english": "you are"
+            },
+            "lui": {
+              "form": "è",
+              "english": "he is"
+            },
+            "lei": {
+              "form": "è",
+              "english": "she is"
+            },
+            "Lei": {
+              "form": "è",
+              "english": "you are (formal)"
+            },
+            "noi": {
+              "form": "siamo",
+              "english": "we are"
+            },
+            "voi": {
+              "form": "siete",
+              "english": "you all are"
+            },
+            "loro": {
+              "form": "sono",
+              "english": "they are"
+            }
+          }
+        },
+        "passato_prossimo": {
+          "forms": {
+            "io": {
+              "form_masculine": "sono stato",
+              "form_feminine": "sono stata",
+              "english": "I was/have been"
+            },
+            "tu": {
+              "form_masculine": "sei stato",
+              "form_feminine": "sei stata",
+              "english": "you were/have been"
+            },
+            "lui": {
+              "form": "è stato",
+              "english": "he was/has been"
+            },
+            "lei": {
+              "form": "è stata",
+              "english": "she was/has been"
+            },
+            "Lei": {
+              "form_masculine": "è stato",
+              "form_feminine": "è stata",
+              "english": "you were/have been (formal)"
+            },
+            "noi": {
+              "form_masculine": "siamo stati",
+              "form_feminine": "siamo state",
+              "form_mixed": "siamo stati",
+              "english": "we were/have been"
+            },
+            "voi": {
+              "form_masculine": "siete stati",
+              "form_feminine": "siete state",
+              "form_mixed": "siete stati",
+              "english": "you all were/have been"
+            },
+            "loro": {
+              "form_masculine": "sono stati",
+              "form_feminine": "sono state",
+              "form_mixed": "sono stati",
+              "english": "they were/have been"
+            }
+          }
+        },
+        "futuro_semplice": {
+          "forms": {
+            "io": {
+              "form": "sarò",
+              "english": "I will be"
+            },
+            "tu": {
+              "form": "sarai",
+              "english": "you will be"
+            },
+            "lui": {
+              "form": "sarà",
+              "english": "he will be"
+            },
+            "lei": {
+              "form": "sarà",
+              "english": "she will be"
+            },
+            "Lei": {
+              "form": "sarà",
+              "english": "you will be (formal)"
+            },
+            "noi": {
+              "form": "saremo",
+              "english": "we will be"
+            },
+            "voi": {
+              "form": "sarete",
+              "english": "you all will be"
+            },
+            "loro": {
+              "form": "saranno",
+              "english": "they will be"
+            }
+          }
+        }
+      },
+      "characteristics": {
+        "transitive": false,
+        "reflexive": false,
+        "auxiliary_verb": "essere",
+        "prepositions_used": [
+          "a",
+          "in",
+          "di"
+        ]
+      },
+      "tags": [
+        "essential",
+        "irregular",
+        "a1_level"
+      ]
+    },
+    {
+      "infinitive": "avere",
+      "infinitive_english": "to have",
+      "verb_type": "irregular",
+      "conjugation_group": "irregular",
+      "difficulty_level": "beginner",
+      "tenses": {
+        "presente": {
+          "forms": {
+            "io": {
+              "form": "ho",
+              "english": "I have"
+            },
+            "tu": {
+              "form": "hai",
+              "english": "you have"
+            },
+            "lui": {
+              "form": "ha",
+              "english": "he has"
+            },
+            "lei": {
+              "form": "ha",
+              "english": "she has"
+            },
+            "Lei": {
+              "form": "ha",
+              "english": "you have (formal)"
+            },
+            "noi": {
+              "form": "abbiamo",
+              "english": "we have"
+            },
+            "voi": {
+              "form": "avete",
+              "english": "you all have"
+            },
+            "loro": {
+              "form": "hanno",
+              "english": "they have"
+            }
+          }
+        },
+        "passato_prossimo": {
+          "forms": {
+            "io": {
+              "form": "ho avuto",
+              "english": "I had/have had"
+            },
+            "tu": {
+              "form": "hai avuto",
+              "english": "you had/have had"
+            },
+            "lui": {
+              "form": "ha avuto",
+              "english": "he had/has had"
+            },
+            "lei": {
+              "form": "ha avuto",
+              "english": "she had/has had"
+            },
+            "Lei": {
+              "form": "ha avuto",
+              "english": "you had/have had (formal)"
+            },
+            "noi": {
+              "form": "abbiamo avuto",
+              "english": "we had/have had"
+            },
+            "voi": {
+              "form": "avete avuto",
+              "english": "you all had/have had"
+            },
+            "loro": {
+              "form": "hanno avuto",
+              "english": "they had/have had"
+            }
+          }
+        },
+        "futuro_semplice": {
+          "forms": {
+            "io": {
+              "form": "avrò",
+              "english": "I will have"
+            },
+            "tu": {
+              "form": "avrai",
+              "english": "you will have"
+            },
+            "lui": {
+              "form": "avrà",
+              "english": "he will have"
+            },
+            "lei": {
+              "form": "avrà",
+              "english": "she will have"
+            },
+            "Lei": {
+              "form": "avrà",
+              "english": "you will have (formal)"
+            },
+            "noi": {
+              "form": "avremo",
+              "english": "we will have"
+            },
+            "voi": {
+              "form": "avrete",
+              "english": "you all will have"
+            },
+            "loro": {
+              "form": "avranno",
+              "english": "they will have"
+            }
+          }
+        }
+      },
+      "characteristics": {
+        "transitive": true,
+        "reflexive": false,
+        "auxiliary_verb": "avere",
+        "prepositions_used": []
+      },
+      "tags": [
+        "essential",
+        "irregular",
+        "a1_level"
+      ]
+    },
+    {
+      "infinitive": "mangiare",
+      "infinitive_english": "to eat",
+      "verb_type": "regular",
+      "conjugation_group": "-are",
+      "difficulty_level": "beginner",
+      "tenses": {
+        "presente": {
+          "forms": {
+            "io": {
+              "form": "mangio",
+              "english": "I eat"
+            },
+            "tu": {
+              "form": "mangi",
+              "english": "you eat"
+            },
+            "lui": {
+              "form": "mangia",
+              "english": "he eats"
+            },
+            "lei": {
+              "form": "mangia",
+              "english": "she eats"
+            },
+            "Lei": {
+              "form": "mangia",
+              "english": "you eat (formal)"
+            },
+            "noi": {
+              "form": "mangiamo",
+              "english": "we eat"
+            },
+            "voi": {
+              "form": "mangiate",
+              "english": "you all eat"
+            },
+            "loro": {
+              "form": "mangiano",
+              "english": "they eat"
+            }
+          }
+        },
+        "passato_prossimo": {
+          "forms": {
+            "io": {
+              "form": "ho mangiato",
+              "english": "I ate/have eaten"
+            },
+            "tu": {
+              "form": "hai mangiato",
+              "english": "you ate/have eaten"
+            },
+            "lui": {
+              "form": "ha mangiato",
+              "english": "he ate/has eaten"
+            },
+            "lei": {
+              "form": "ha mangiato",
+              "english": "she ate/has eaten"
+            },
+            "Lei": {
+              "form": "ha mangiato",
+              "english": "you ate/have eaten (formal)"
+            },
+            "noi": {
+              "form": "abbiamo mangiato",
+              "english": "we ate/have eaten"
+            },
+            "voi": {
+              "form": "avete mangiato",
+              "english": "you all ate/have eaten"
+            },
+            "loro": {
+              "form": "hanno mangiato",
+              "english": "they ate/have eaten"
+            }
+          }
+        },
+        "futuro_semplice": {
+          "forms": {
+            "io": {
+              "form": "mangerò",
+              "english": "I will eat"
+            },
+            "tu": {
+              "form": "mangerai",
+              "english": "you will eat"
+            },
+            "lui": {
+              "form": "mangerà",
+              "english": "he will eat"
+            },
+            "lei": {
+              "form": "mangerà",
+              "english": "she will eat"
+            },
+            "Lei": {
+              "form": "mangerà",
+              "english": "you will eat (formal)"
+            },
+            "noi": {
+              "form": "mangeremo",
+              "english": "we will eat"
+            },
+            "voi": {
+              "form": "mangerete",
+              "english": "you all will eat"
+            },
+            "loro": {
+              "form": "mangeranno",
+              "english": "they will eat"
+            }
+          }
+        }
+      },
+      "characteristics": {
+        "transitive": true,
+        "reflexive": false,
+        "auxiliary_verb": "avere",
+        "prepositions_used": []
+      },
+      "tags": [
+        "common",
+        "food",
+        "a1_level"
+      ]
+    },
+    {
+      "infinitive": "leggere",
+      "infinitive_english": "to read",
+      "verb_type": "regular",
+      "conjugation_group": "-ere",
+      "difficulty_level": "beginner",
+      "tenses": {
+        "presente": {
+          "forms": {
+            "io": {
+              "form": "leggo",
+              "english": "I read"
+            },
+            "tu": {
+              "form": "leggi",
+              "english": "you read"
+            },
+            "lui": {
+              "form": "legge",
+              "english": "he reads"
+            },
+            "lei": {
+              "form": "legge",
+              "english": "she reads"
+            },
+            "Lei": {
+              "form": "legge",
+              "english": "you read (formal)"
+            },
+            "noi": {
+              "form": "leggiamo",
+              "english": "we read"
+            },
+            "voi": {
+              "form": "leggete",
+              "english": "you all read"
+            },
+            "loro": {
+              "form": "leggono",
+              "english": "they read"
+            }
+          }
+        },
+        "passato_prossimo": {
+          "forms": {
+            "io": {
+              "form": "ho letto",
+              "english": "I read/have read"
+            },
+            "tu": {
+              "form": "hai letto",
+              "english": "you read/have read"
+            },
+            "lui": {
+              "form": "ha letto",
+              "english": "he read/has read"
+            },
+            "lei": {
+              "form": "ha letto",
+              "english": "she read/has read"
+            },
+            "Lei": {
+              "form": "ha letto",
+              "english": "you read/have read (formal)"
+            },
+            "noi": {
+              "form": "abbiamo letto",
+              "english": "we read/have read"
+            },
+            "voi": {
+              "form": "avete letto",
+              "english": "you all read/have read"
+            },
+            "loro": {
+              "form": "hanno letto",
+              "english": "they read/have read"
+            }
+          }
+        },
+        "futuro_semplice": {
+          "forms": {
+            "io": {
+              "form": "leggerò",
+              "english": "I will read"
+            },
+            "tu": {
+              "form": "leggerai",
+              "english": "you will read"
+            },
+            "lui": {
+              "form": "leggerà",
+              "english": "he will read"
+            },
+            "lei": {
+              "form": "leggerà",
+              "english": "she will read"
+            },
+            "Lei": {
+              "form": "leggerà",
+              "english": "you will read (formal)"
+            },
+            "noi": {
+              "form": "leggeremo",
+              "english": "we will read"
+            },
+            "voi": {
+              "form": "leggerete",
+              "english": "you all will read"
+            },
+            "loro": {
+              "form": "leggeranno",
+              "english": "they will read"
+            }
+          }
+        }
+      },
+      "characteristics": {
+        "transitive": true,
+        "reflexive": false,
+        "auxiliary_verb": "avere",
+        "prepositions_used": [
+          "di"
+        ]
+      },
+      "tags": [
+        "common",
+        "books",
+        "a1_level"
+      ]
+    },
+    {
+      "infinitive": "dormire",
+      "infinitive_english": "to sleep",
+      "verb_type": "regular",
+      "conjugation_group": "-ire",
+      "difficulty_level": "beginner",
+      "tenses": {
+        "presente": {
+          "forms": {
+            "io": {
+              "form": "dormo",
+              "english": "I sleep"
+            },
+            "tu": {
+              "form": "dormi",
+              "english": "you sleep"
+            },
+            "lui": {
+              "form": "dorme",
+              "english": "he sleeps"
+            },
+            "lei": {
+              "form": "dorme",
+              "english": "she sleeps"
+            },
+            "Lei": {
+              "form": "dorme",
+              "english": "you sleep (formal)"
+            },
+            "noi": {
+              "form": "dormiamo",
+              "english": "we sleep"
+            },
+            "voi": {
+              "form": "dormite",
+              "english": "you all sleep"
+            },
+            "loro": {
+              "form": "dormono",
+              "english": "they sleep"
+            }
+          }
+        },
+        "passato_prossimo": {
+          "forms": {
+            "io": {
+              "form": "ho dormito",
+              "english": "I slept/have slept"
+            },
+            "tu": {
+              "form": "hai dormito",
+              "english": "you slept/have slept"
+            },
+            "lui": {
+              "form": "ha dormito",
+              "english": "he slept/has slept"
+            },
+            "lei": {
+              "form": "ha dormito",
+              "english": "she slept/has slept"
+            },
+            "Lei": {
+              "form": "ha dormito",
+              "english": "you slept/have slept (formal)"
+            },
+            "noi": {
+              "form": "abbiamo dormito",
+              "english": "we slept/have slept"
+            },
+            "voi": {
+              "form": "avete dormito",
+              "english": "you all slept/have slept"
+            },
+            "loro": {
+              "form": "hanno dormito",
+              "english": "they slept/have slept"
+            }
+          }
+        },
+        "futuro_semplice": {
+          "forms": {
+            "io": {
+              "form": "dormirò",
+              "english": "I will sleep"
+            },
+            "tu": {
+              "form": "dormirai",
+              "english": "you will sleep"
+            },
+            "lui": {
+              "form": "dormirà",
+              "english": "he will sleep"
+            },
+            "lei": {
+              "form": "dormirà",
+              "english": "she will sleep"
+            },
+            "Lei": {
+              "form": "dormirà",
+              "english": "you will sleep (formal)"
+            },
+            "noi": {
+              "form": "dormiremo",
+              "english": "we will sleep"
+            },
+            "voi": {
+              "form": "dormirete",
+              "english": "you all will sleep"
+            },
+            "loro": {
+              "form": "dormiranno",
+              "english": "they will sleep"
+            }
+          }
+        }
+      },
+      "characteristics": {
+        "transitive": false,
+        "reflexive": false,
+        "auxiliary_verb": "avere",
+        "prepositions_used": []
+      },
+      "tags": [
+        "common",
+        "daily_routine",
+        "a1_level"
+      ]
+    },
+    {
+      "infinitive": "andare",
+      "infinitive_english": "to go",
+      "verb_type": "irregular",
+      "conjugation_group": "irregular",
+      "difficulty_level": "beginner",
+      "tenses": {
+        "presente": {
+          "forms": {
+            "io": {
+              "form": "vado",
+              "english": "I go"
+            },
+            "tu": {
+              "form": "vai",
+              "english": "you go"
+            },
+            "lui": {
+              "form": "va",
+              "english": "he goes"
+            },
+            "lei": {
+              "form": "va",
+              "english": "she goes"
+            },
+            "Lei": {
+              "form": "va",
+              "english": "you go (formal)"
+            },
+            "noi": {
+              "form": "andiamo",
+              "english": "we go"
+            },
+            "voi": {
+              "form": "andate",
+              "english": "you all go"
+            },
+            "loro": {
+              "form": "vanno",
+              "english": "they go"
+            }
+          }
+        },
+        "passato_prossimo": {
+          "forms": {
+            "io": {
+              "form_masculine": "sono andato",
+              "form_feminine": "sono andata",
+              "english": "I went/have gone"
+            },
+            "tu": {
+              "form_masculine": "sei andato",
+              "form_feminine": "sei andata",
+              "english": "you went/have gone"
+            },
+            "lui": {
+              "form": "è andato",
+              "english": "he went/has gone"
+            },
+            "lei": {
+              "form": "è andata",
+              "english": "she went/has gone"
+            },
+            "Lei": {
+              "form_masculine": "è andato",
+              "form_feminine": "è andata",
+              "english": "you went/have gone (formal)"
+            },
+            "noi": {
+              "form_masculine": "siamo andati",
+              "form_feminine": "siamo andate",
+              "form_mixed": "siamo andati",
+              "english": "we went/have gone"
+            },
+            "voi": {
+              "form_masculine": "siete andati",
+              "form_feminine": "siete andate",
+              "form_mixed": "siete andati",
+              "english": "you all went/have gone"
+            },
+            "loro": {
+              "form_masculine": "sono andati",
+              "form_feminine": "sono andate",
+              "form_mixed": "sono andati",
+              "english": "they went/have gone"
+            }
+          }
+        },
+        "futuro_semplice": {
+          "forms": {
+            "io": {
+              "form": "andrò",
+              "english": "I will go"
+            },
+            "tu": {
+              "form": "andrai",
+              "english": "you will go"
+            },
+            "lui": {
+              "form": "andrà",
+              "english": "he will go"
+            },
+            "lei": {
+              "form": "andrà",
+              "english": "she will go"
+            },
+            "Lei": {
+              "form": "andrà",
+              "english": "you will go (formal)"
+            },
+            "noi": {
+              "form": "andremo",
+              "english": "we will go"
+            },
+            "voi": {
+              "form": "andrete",
+              "english": "you all will go"
+            },
+            "loro": {
+              "form": "andranno",
+              "english": "they will go"
+            }
+          }
+        }
+      },
+      "characteristics": {
+        "transitive": false,
+        "reflexive": false,
+        "auxiliary_verb": "essere",
+        "prepositions_used": [
+          "a",
+          "in",
+          "da"
+        ]
+      },
+      "tags": [
+        "essential",
+        "movement",
+        "irregular",
+        "a1_level"
+      ]
+    },
+    {
+      "infinitive": "fare",
+      "infinitive_english": [
+        "to do",
+        "to make"
+      ],
+      "verb_type": "irregular",
+      "conjugation_group": "irregular",
+      "difficulty_level": "beginner",
+      "tenses": {
+        "presente": {
+          "forms": {
+            "io": {
+              "form": "faccio",
+              "english": [
+                "I do",
+                "I make"
+              ]
+            },
+            "tu": {
+              "form": "fai",
+              "english": [
+                "you do",
+                "you make"
+              ]
+            },
+            "lui": {
+              "form": "fa",
+              "english": [
+                "he does",
+                "he makes"
+              ]
+            },
+            "lei": {
+              "form": "fa",
+              "english": [
+                "she does",
+                "she makes"
+              ]
+            },
+            "Lei": {
+              "form": "fa",
+              "english": [
+                "you do",
+                "you make"
+              ]
+            },
+            "noi": {
+              "form": "facciamo",
+              "english": [
+                "we do",
+                "we make"
+              ]
+            },
+            "voi": {
+              "form": "fate",
+              "english": [
+                "you all do",
+                "you all make"
+              ]
+            },
+            "loro": {
+              "form": "fanno",
+              "english": [
+                "they do",
+                "they make"
+              ]
+            }
+          }
+        },
+        "passato_prossimo": {
+          "forms": {
+            "io": {
+              "form": "ho fatto",
+              "english": [
+                "I did/have done",
+                "I made/have made"
+              ]
+            },
+            "tu": {
+              "form": "hai fatto",
+              "english": [
+                "you did/have done",
+                "you made/have made"
+              ]
+            },
+            "lui": {
+              "form": "ha fatto",
+              "english": [
+                "he did/has done",
+                "he made/has made"
+              ]
+            },
+            "lei": {
+              "form": "ha fatto",
+              "english": [
+                "she did/has done",
+                "she made/has made"
+              ]
+            },
+            "Lei": {
+              "form": "ha fatto",
+              "english": [
+                "you did/have done",
+                "you made/have made"
+              ]
+            },
+            "noi": {
+              "form": "abbiamo fatto",
+              "english": [
+                "we did/have done",
+                "we made/have made"
+              ]
+            },
+            "voi": {
+              "form": "avete fatto",
+              "english": [
+                "you all did/have done",
+                "you all made/have made"
+              ]
+            },
+            "loro": {
+              "form": "hanno fatto",
+              "english": [
+                "they did/have done",
+                "they made/have made"
+              ]
+            }
+          }
+        },
+        "futuro_semplice": {
+          "forms": {
+            "io": {
+              "form": "farò",
+              "english": [
+                "I will do",
+                "I will make"
+              ]
+            },
+            "tu": {
+              "form": "farai",
+              "english": [
+                "you will do",
+                "you will make"
+              ]
+            },
+            "lui": {
+              "form": "farà",
+              "english": [
+                "he will do",
+                "he will make"
+              ]
+            },
+            "lei": {
+              "form": "farà",
+              "english": [
+                "she will do",
+                "she will make"
+              ]
+            },
+            "Lei": {
+              "form": "farà",
+              "english": [
+                "you will do",
+                "you will make"
+              ]
+            },
+            "noi": {
+              "form": "faremo",
+              "english": [
+                "we will do",
+                "we will make"
+              ]
+            },
+            "voi": {
+              "form": "farete",
+              "english": [
+                "you all will do",
+                "you all will make"
+              ]
+            },
+            "loro": {
+              "form": "faranno",
+              "english": [
+                "they will do",
+                "they will make"
+              ]
+            }
+          }
+        }
+      },
+      "characteristics": {
+        "transitive": true,
+        "reflexive": false,
+        "auxiliary_verb": "avere",
+        "prepositions_used": [
+          "a",
+          "di",
+          "per"
+        ]
+      },
+      "tags": [
+        "essential",
+        "irregular",
+        "common",
+        "a1_level"
+      ]
+    },
+    {
+      "infinitive": "vedere",
+      "infinitive_english": "to see",
+      "verb_type": "regular",
+      "conjugation_group": "-ere",
+      "difficulty_level": "beginner",
+      "tenses": {
+        "presente": {
+          "forms": {
+            "io": {
+              "form": "vedo",
+              "english": "I see"
+            },
+            "tu": {
+              "form": "vedi",
+              "english": "you see"
+            },
+            "lui": {
+              "form": "vede",
+              "english": "he sees"
+            },
+            "lei": {
+              "form": "vede",
+              "english": "she sees"
+            },
+            "Lei": {
+              "form": "vede",
+              "english": "you see (formal)"
+            },
+            "noi": {
+              "form": "vediamo",
+              "english": "we see"
+            },
+            "voi": {
+              "form": "vedete",
+              "english": "you all see"
+            },
+            "loro": {
+              "form": "vedono",
+              "english": "they see"
+            }
+          }
+        },
+        "passato_prossimo": {
+          "forms": {
+            "io": {
+              "form": "ho visto",
+              "english": "I saw/have seen"
+            },
+            "tu": {
+              "form": "hai visto",
+              "english": "you saw/have seen"
+            },
+            "lui": {
+              "form": "ha visto",
+              "english": "he saw/has seen"
+            },
+            "lei": {
+              "form": "ha visto",
+              "english": "she saw/has seen"
+            },
+            "Lei": {
+              "form": "ha visto",
+              "english": "you saw/have seen (formal)"
+            },
+            "noi": {
+              "form": "abbiamo visto",
+              "english": "we saw/have seen"
+            },
+            "voi": {
+              "form": "avete visto",
+              "english": "you all saw/have seen"
+            },
+            "loro": {
+              "form": "hanno visto",
+              "english": "they saw/have seen"
+            }
+          }
+        },
+        "futuro_semplice": {
+          "forms": {
+            "io": {
+              "form": "vedrò",
+              "english": "I will see"
+            },
+            "tu": {
+              "form": "vedrai",
+              "english": "you will see"
+            },
+            "lui": {
+              "form": "vedrà",
+              "english": "he will see"
+            },
+            "lei": {
+              "form": "vedrà",
+              "english": "she will see"
+            },
+            "Lei": {
+              "form": "vedrà",
+              "english": "you will see (formal)"
+            },
+            "noi": {
+              "form": "vedremo",
+              "english": "we will see"
+            },
+            "voi": {
+              "form": "vedrete",
+              "english": "you all will see"
+            },
+            "loro": {
+              "form": "vedranno",
+              "english": "they will see"
+            }
+          }
+        }
+      },
+      "characteristics": {
+        "transitive": true,
+        "reflexive": false,
+        "auxiliary_verb": "avere",
+        "prepositions_used": []
+      },
+      "tags": [
+        "common",
+        "sight",
+        "a1_level"
+      ]
+    },
+    {
+      "infinitive": "chiamare",
+      "infinitive_english": "to call",
+      "verb_type": "regular",
+      "conjugation_group": "-are",
+      "difficulty_level": "beginner",
+      "tenses": {
+        "presente": {
+          "forms": {
+            "io": {
+              "form": "chiamo",
+              "english": "I call"
+            },
+            "tu": {
+              "form": "chiami",
+              "english": "you call"
+            },
+            "lui": {
+              "form": "chiama",
+              "english": "he calls"
+            },
+            "lei": {
+              "form": "chiama",
+              "english": "she calls"
+            },
+            "Lei": {
+              "form": "chiama",
+              "english": "you call (formal)"
+            },
+            "noi": {
+              "form": "chiamiamo",
+              "english": "we call"
+            },
+            "voi": {
+              "form": "chiamate",
+              "english": "you all call"
+            },
+            "loro": {
+              "form": "chiamano",
+              "english": "they call"
+            }
+          }
+        },
+        "passato_prossimo": {
+          "forms": {
+            "io": {
+              "form": "ho chiamato",
+              "english": "I called/have called"
+            },
+            "tu": {
+              "form": "hai chiamato",
+              "english": "you called/have called"
+            },
+            "lui": {
+              "form": "ha chiamato",
+              "english": "he called/has called"
+            },
+            "lei": {
+              "form": "ha chiamato",
+              "english": "she called/has called"
+            },
+            "Lei": {
+              "form": "ha chiamato",
+              "english": "you called/have called (formal)"
+            },
+            "noi": {
+              "form": "abbiamo chiamato",
+              "english": "we called/have called"
+            },
+            "voi": {
+              "form": "avete chiamato",
+              "english": "you all called/have called"
+            },
+            "loro": {
+              "form": "hanno chiamato",
+              "english": "they called/have called"
+            }
+          }
+        },
+        "futuro_semplice": {
+          "forms": {
+            "io": {
+              "form": "chiamerò",
+              "english": "I will call"
+            },
+            "tu": {
+              "form": "chiamerai",
+              "english": "you will call"
+            },
+            "lui": {
+              "form": "chiamerà",
+              "english": "he will call"
+            },
+            "lei": {
+              "form": "chiamerà",
+              "english": "she will call"
+            },
+            "Lei": {
+              "form": "chiamerà",
+              "english": "you will call (formal)"
+            },
+            "noi": {
+              "form": "chiameremo",
+              "english": "we will call"
+            },
+            "voi": {
+              "form": "chiamerete",
+              "english": "you all will call"
+            },
+            "loro": {
+              "form": "chiameranno",
+              "english": "they will call"
+            }
+          }
+        }
+      },
+      "characteristics": {
+        "transitive": true,
+        "reflexive": false,
+        "auxiliary_verb": "avere",
+        "prepositions_used": [
+          "a"
+        ]
+      },
+      "tags": [
+        "common",
+        "communication",
+        "a1_level"
+      ]
+    },
+    {
+      "infinitive": "scrivere",
+      "infinitive_english": "to write",
+      "verb_type": "regular",
+      "conjugation_group": "-ere",
+      "difficulty_level": "beginner",
+      "tenses": {
+        "presente": {
+          "forms": {
+            "io": {
+              "form": "scrivo",
+              "english": "I write"
+            },
+            "tu": {
+              "form": "scrivi",
+              "english": "you write"
+            },
+            "lui": {
+              "form": "scrive",
+              "english": "he writes"
+            },
+            "lei": {
+              "form": "scrive",
+              "english": "she writes"
+            },
+            "Lei": {
+              "form": "scrive",
+              "english": "you write (formal)"
+            },
+            "noi": {
+              "form": "scriviamo",
+              "english": "we write"
+            },
+            "voi": {
+              "form": "scrivete",
+              "english": "you all write"
+            },
+            "loro": {
+              "form": "scrivono",
+              "english": "they write"
+            }
+          }
+        },
+        "passato_prossimo": {
+          "forms": {
+            "io": {
+              "form": "ho scritto",
+              "english": "I wrote/have written"
+            },
+            "tu": {
+              "form": "hai scritto",
+              "english": "you wrote/have written"
+            },
+            "lui": {
+              "form": "ha scritto",
+              "english": "he wrote/has written"
+            },
+            "lei": {
+              "form": "ha scritto",
+              "english": "she wrote/has written"
+            },
+            "Lei": {
+              "form": "ha scritto",
+              "english": "you wrote/have written (formal)"
+            },
+            "noi": {
+              "form": "abbiamo scritto",
+              "english": "we wrote/have written"
+            },
+            "voi": {
+              "form": "avete scritto",
+              "english": "you all wrote/have written"
+            },
+            "loro": {
+              "form": "hanno scritto",
+              "english": "they wrote/have written"
+            }
+          }
+        },
+        "futuro_semplice": {
+          "forms": {
+            "io": {
+              "form": "scriverò",
+              "english": "I will write"
+            },
+            "tu": {
+              "form": "scriverai",
+              "english": "you will write"
+            },
+            "lui": {
+              "form": "scriverà",
+              "english": "he will write"
+            },
+            "lei": {
+              "form": "scriverà",
+              "english": "she will write"
+            },
+            "Lei": {
+              "form": "scriverà",
+              "english": "you will write (formal)"
+            },
+            "noi": {
+              "form": "scriveremo",
+              "english": "we will write"
+            },
+            "voi": {
+              "form": "scriverete",
+              "english": "you all will write"
+            },
+            "loro": {
+              "form": "scriveranno",
+              "english": "they will write"
+            }
+          }
+        }
+      },
+      "characteristics": {
+        "transitive": true,
+        "reflexive": false,
+        "auxiliary_verb": "avere",
+        "prepositions_used": [
+          "a",
+          "di"
+        ]
+      },
+      "tags": [
+        "common",
+        "communication",
+        "a1_level"
+      ]
+    },
+    {
+      "infinitive": "capire",
+      "infinitive_english": "to understand",
+      "verb_type": "regular (isc)",
+      "conjugation_group": "-ire (isc)",
+      "difficulty_level": "beginner",
+      "tenses": {
+        "presente": {
+          "forms": {
+            "io": {
+              "form": "capisco",
+              "english": "I understand"
+            },
+            "tu": {
+              "form": "capisci",
+              "english": "you understand"
+            },
+            "lui": {
+              "form": "capisce",
+              "english": "he understands"
+            },
+            "lei": {
+              "form": "capisce",
+              "english": "she understands"
+            },
+            "Lei": {
+              "form": "capisce",
+              "english": "you understand (formal)"
+            },
+            "noi": {
+              "form": "capiamo",
+              "english": "we understand"
+            },
+            "voi": {
+              "form": "capite",
+              "english": "you all understand"
+            },
+            "loro": {
+              "form": "capiscono",
+              "english": "they understand"
+            }
+          }
+        },
+        "passato_prossimo": {
+          "forms": {
+            "io": {
+              "form": "ho capito",
+              "english": "I understood/have understood"
+            },
+            "tu": {
+              "form": "hai capito",
+              "english": "you understood/have understood"
+            },
+            "lui": {
+              "form": "ha capito",
+              "english": "he understood/has understood"
+            },
+            "lei": {
+              "form": "ha capito",
+              "english": "she understood/has understood"
+            },
+            "Lei": {
+              "form": "ha capito",
+              "english": "you understood/have understood (formal)"
+            },
+            "noi": {
+              "form": "abbiamo capito",
+              "english": "we understood/have understood"
+            },
+            "voi": {
+              "form": "avete capito",
+              "english": "you all understood/have understood"
+            },
+            "loro": {
+              "form": "hanno capito",
+              "english": "they understood/have understood"
+            }
+          }
+        },
+        "futuro_semplice": {
+          "forms": {
+            "io": {
+              "form": "capirò",
+              "english": "I will understand"
+            },
+            "tu": {
+              "form": "capirai",
+              "english": "you will understand"
+            },
+            "lui": {
+              "form": "capirà",
+              "english": "he will understand"
+            },
+            "lei": {
+              "form": "capirà",
+              "english": "she will understand"
+            },
+            "Lei": {
+              "form": "capirà",
+              "english": "you will understand (formal)"
+            },
+            "noi": {
+              "form": "capiremo",
+              "english": "we will understand"
+            },
+            "voi": {
+              "form": "capirete",
+              "english": "you all will understand"
+            },
+            "loro": {
+              "form": "capiranno",
+              "english": "they will understand"
+            }
+          }
+        }
+      },
+      "characteristics": {
+        "transitive": true,
+        "reflexive": false,
+        "auxiliary_verb": "avere",
+        "prepositions_used": []
+      },
+      "tags": [
+        "common",
+        "isc_verb",
+        "a1_level"
+      ]
+    },
+    {
+      "infinitive": "dovere",
+      "infinitive_english": [
+        "to have to",
+        "must"
+      ],
+      "verb_type": "irregular (modal)",
+      "conjugation_group": "irregular",
+      "difficulty_level": "intermediate",
+      "tenses": {
+        "presente": {
+          "forms": {
+            "io": {
+              "form": "devo",
+              "english": "I must"
+            },
+            "tu": {
+              "form": "devi",
+              "english": "you must"
+            },
+            "lui": {
+              "form": "deve",
+              "english": "he must"
+            },
+            "lei": {
+              "form": "deve",
+              "english": "she must"
+            },
+            "Lei": {
+              "form": "deve",
+              "english": "you must (formal)"
+            },
+            "noi": {
+              "form": "dobbiamo",
+              "english": "we must"
+            },
+            "voi": {
+              "form": "dovete",
+              "english": "you all must"
+            },
+            "loro": {
+              "form": "devono",
+              "english": "they must"
+            }
+          }
+        },
+        "passato_prossimo": {
+          "auxiliary_note": "Uses avere for transitive constructions, essere for intransitive",
+          "forms": {
+            "io": {
+              "form_masculine": "ho dovuto",
+              "form_feminine": "sono dovuta",
+              "english": [
+                "I had to",
+                "I must have"
+              ]
+            },
+            "tu": {
+              "form_masculine": "hai dovuto",
+              "form_feminine": "sei dovuta",
+              "english": [
+                "you had to",
+                "you must have"
+              ]
+            },
+            "lui": {
+              "form": "ha dovuto",
+              "english": [
+                "he had to",
+                "he must have"
+              ]
+            },
+            "lei": {
+              "form": "è dovuta",
+              "english": [
+                "she had to",
+                "she must have"
+              ]
+            },
+            "Lei": {
+              "form_masculine": "ha dovuto",
+              "form_feminine": "è dovuta",
+              "english": [
+                "you had to",
+                "you must have"
+              ]
+            },
+            "noi": {
+              "form_masculine": "abbiamo dovuto",
+              "form_feminine": "siamo dovute",
+              "form_mixed": "siamo dovuti",
+              "english": [
+                "we had to",
+                "we must have"
+              ]
+            },
+            "voi": {
+              "form_masculine": "avete dovuto",
+              "form_feminine": "siete dovute",
+              "form_mixed": "siete dovuti",
+              "english": [
+                "you all had to",
+                "you all must have"
+              ]
+            },
+            "loro": {
+              "form_masculine": "hanno dovuto",
+              "form_feminine": "sono dovute",
+              "form_mixed": "sono dovuti",
+              "english": [
+                "they had to",
+                "they must have"
+              ]
+            }
+          }
+        },
+        "futuro_semplice": {
+          "forms": {
+            "io": {
+              "form": "dovrò",
+              "english": "I will have to"
+            },
+            "tu": {
+              "form": "dovrai",
+              "english": "you will have to"
+            },
+            "lui": {
+              "form": "dovrà",
+              "english": "he will have to"
+            },
+            "lei": {
+              "form": "dovrà",
+              "english": "she will have to"
+            },
+            "Lei": {
+              "form": "dovrà",
+              "english": "you will have to (formal)"
+            },
+            "noi": {
+              "form": "dovremo",
+              "english": "we will have to"
+            },
+            "voi": {
+              "form": "dovrete",
+              "english": "you all will have to"
+            },
+            "loro": {
+              "form": "dovranno",
+              "english": "they will have to"
+            }
+          }
+        }
+      },
+      "characteristics": {
+        "transitive": false,
+        "reflexive": false,
+        "auxiliary_verb": [
+          "avere",
+          "essere"
+        ],
+        "auxiliary_note": "avere for transitive use, essere for intransitive use",
+        "prepositions_used": []
+      },
+      "tags": [
+        "modal",
+        "irregular",
+        "a2_level"
+      ]
+    },
+    {
+      "infinitive": "volere",
+      "infinitive_english": "to want",
+      "verb_type": "irregular (modal)",
+      "conjugation_group": "irregular",
+      "difficulty_level": "intermediate",
+      "tenses": {
+        "presente": {
+          "forms": {
+            "io": {
+              "form": "voglio",
+              "english": "I want"
+            },
+            "tu": {
+              "form": "vuoi",
+              "english": "you want"
+            },
+            "lui": {
+              "form": "vuole",
+              "english": "he wants"
+            },
+            "lei": {
+              "form": "vuole",
+              "english": "she wants"
+            },
+            "Lei": {
+              "form": "vuole",
+              "english": "you want (formal)"
+            },
+            "noi": {
+              "form": "vogliamo",
+              "english": "we want"
+            },
+            "voi": {
+              "form": "volete",
+              "english": "you all want"
+            },
+            "loro": {
+              "form": "vogliono",
+              "english": "they want"
+            }
+          }
+        },
+        "passato_prossimo": {
+          "forms": {
+            "io": {
+              "form": "ho voluto",
+              "english": "I wanted/have wanted"
+            },
+            "tu": {
+              "form": "hai voluto",
+              "english": "you wanted/have wanted"
+            },
+            "lui": {
+              "form": "ha voluto",
+              "english": "he wanted/has wanted"
+            },
+            "lei": {
+              "form": "ha voluto",
+              "english": "she wanted/has wanted"
+            },
+            "Lei": {
+              "form": "ha voluto",
+              "english": "you wanted/have wanted (formal)"
+            },
+            "noi": {
+              "form": "abbiamo voluto",
+              "english": "we wanted/have wanted"
+            },
+            "voi": {
+              "form": "avete voluto",
+              "english": "you all wanted/have wanted"
+            },
+            "loro": {
+              "form": "hanno voluto",
+              "english": "they wanted/have wanted"
+            }
+          }
+        },
+        "futuro_semplice": {
+          "forms": {
+            "io": {
+              "form": "vorrò",
+              "english": "I will want"
+            },
+            "tu": {
+              "form": "vorrai",
+              "english": "you will want"
+            },
+            "lui": {
+              "form": "vorrà",
+              "english": "he will want"
+            },
+            "lei": {
+              "form": "vorrà",
+              "english": "she will want"
+            },
+            "Lei": {
+              "form": "vorrà",
+              "english": "you will want (formal)"
+            },
+            "noi": {
+              "form": "vorremo",
+              "english": "we will want"
+            },
+            "voi": {
+              "form": "vorrete",
+              "english": "you all will want"
+            },
+            "loro": {
+              "form": "vorranno",
+              "english": "they will want"
+            }
+          }
+        }
+      },
+      "characteristics": {
+        "transitive": true,
+        "reflexive": false,
+        "auxiliary_verb": "avere",
+        "prepositions_used": []
+      },
+      "tags": [
+        "modal",
+        "irregular",
+        "a2_level"
+      ]
+    },
+    {
+      "infinitive": "potere",
+      "infinitive_english": "to be able to, can",
+      "verb_type": "irregular (modal)",
+      "conjugation_group": "irregular",
+      "difficulty_level": "intermediate",
+      "tenses": {
+        "presente": {
+          "forms": {
+            "io": {
+              "form": "posso",
+              "english": "I can"
+            },
+            "tu": {
+              "form": "puoi",
+              "english": "you can"
+            },
+            "lui": {
+              "form": "può",
+              "english": "he can"
+            },
+            "lei": {
+              "form": "può",
+              "english": "she can"
+            },
+            "Lei": {
+              "form": "può",
+              "english": "you can (formal)"
+            },
+            "noi": {
+              "form": "possiamo",
+              "english": "we can"
+            },
+            "voi": {
+              "form": "potete",
+              "english": "you all can"
+            },
+            "loro": {
+              "form": "possono",
+              "english": "they can"
+            }
+          }
+        },
+        "passato_prossimo": {
+          "forms": {
+            "io": {
+              "form": "ho potuto",
+              "english": "I could/have been able to"
+            },
+            "tu": {
+              "form": "hai potuto",
+              "english": "you could/have been able to"
+            },
+            "lui": {
+              "form": "ha potuto",
+              "english": "he could/has been able to"
+            },
+            "lei": {
+              "form": "ha potuto",
+              "english": "she could/has been able to"
+            },
+            "Lei": {
+              "form": "ha potuto",
+              "english": "you could/have been able to (formal)"
+            },
+            "noi": {
+              "form": "abbiamo potuto",
+              "english": "we could/have been able to"
+            },
+            "voi": {
+              "form": "avete potuto",
+              "english": "you all could/have been able to"
+            },
+            "loro": {
+              "form": "hanno potuto",
+              "english": "they could/have been able to"
+            }
+          }
+        },
+        "futuro_semplice": {
+          "forms": {
+            "io": {
+              "form": "potrò",
+              "english": "I will be able to"
+            },
+            "tu": {
+              "form": "potrai",
+              "english": "you will be able to"
+            },
+            "lui": {
+              "form": "potrà",
+              "english": "he will be able to"
+            },
+            "lei": {
+              "form": "potrà",
+              "english": "she will be able to"
+            },
+            "Lei": {
+              "form": "potrà",
+              "english": "you will be able to (formal)"
+            },
+            "noi": {
+              "form": "potremo",
+              "english": "we will be able to"
+            },
+            "voi": {
+              "form": "potrete",
+              "english": "you all will be able to"
+            },
+            "loro": {
+              "form": "potranno",
+              "english": "they will be able to"
+            }
+          }
+        }
+      },
+      "characteristics": {
+        "transitive": false,
+        "reflexive": false,
+        "auxiliary_verb": "avere",
+        "prepositions_used": []
+      },
+      "tags": [
+        "modal",
+        "irregular",
+        "a2_level"
+      ]
+    },
+    {
+      "infinitive": "prendere",
+      "infinitive_english": "to take, to get",
+      "verb_type": "regular",
+      "conjugation_group": "-ere",
+      "difficulty_level": "beginner",
+      "tenses": {
+        "presente": {
+          "forms": {
+            "io": {
+              "form": "prendo",
+              "english": "I take"
+            },
+            "tu": {
+              "form": "prendi",
+              "english": "you take"
+            },
+            "lui": {
+              "form": "prende",
+              "english": "he takes"
+            },
+            "lei": {
+              "form": "prende",
+              "english": "she takes"
+            },
+            "Lei": {
+              "form": "prende",
+              "english": "you take (formal)"
+            },
+            "noi": {
+              "form": "prendiamo",
+              "english": "we take"
+            },
+            "voi": {
+              "form": "prendete",
+              "english": "you all take"
+            },
+            "loro": {
+              "form": "prendono",
+              "english": "they take"
+            }
+          }
+        },
+        "passato_prossimo": {
+          "forms": {
+            "io": {
+              "form": "ho preso",
+              "english": "I took/have taken"
+            },
+            "tu": {
+              "form": "hai preso",
+              "english": "you took/have taken"
+            },
+            "lui": {
+              "form": "ha preso",
+              "english": "he took/has taken"
+            },
+            "lei": {
+              "form": "ha preso",
+              "english": "she took/has taken"
+            },
+            "Lei": {
+              "form": "ha preso",
+              "english": "you took/have taken (formal)"
+            },
+            "noi": {
+              "form": "abbiamo preso",
+              "english": "we took/have taken"
+            },
+            "voi": {
+              "form": "avete preso",
+              "english": "you all took/have taken"
+            },
+            "loro": {
+              "form": "hanno preso",
+              "english": "they took/have taken"
+            }
+          }
+        },
+        "futuro_semplice": {
+          "forms": {
+            "io": {
+              "form": "prenderò",
+              "english": "I will take"
+            },
+            "tu": {
+              "form": "prenderai",
+              "english": "you will take"
+            },
+            "lui": {
+              "form": "prenderà",
+              "english": "he will take"
+            },
+            "lei": {
+              "form": "prenderà",
+              "english": "she will take"
+            },
+            "Lei": {
+              "form": "prenderà",
+              "english": "you will take (formal)"
+            },
+            "noi": {
+              "form": "prenderemo",
+              "english": "we will take"
+            },
+            "voi": {
+              "form": "prenderete",
+              "english": "you all will take"
+            },
+            "loro": {
+              "form": "prenderanno",
+              "english": "they will take"
+            }
+          }
+        }
+      },
+      "characteristics": {
+        "transitive": true,
+        "reflexive": false,
+        "auxiliary_verb": "avere",
+        "prepositions_used": [
+          "a",
+          "da"
+        ]
+      },
+      "tags": [
+        "common",
+        "actions",
+        "a1_level"
+      ]
+    },
+    {
+      "infinitive": "mettere",
+      "infinitive_english": "to put",
+      "verb_type": "regular",
+      "conjugation_group": "-ere",
+      "difficulty_level": "beginner",
+      "tenses": {
+        "presente": {
+          "forms": {
+            "io": {
+              "form": "metto",
+              "english": "I put"
+            },
+            "tu": {
+              "form": "metti",
+              "english": "you put"
+            },
+            "lui": {
+              "form": "mette",
+              "english": "he puts"
+            },
+            "lei": {
+              "form": "mette",
+              "english": "she puts"
+            },
+            "Lei": {
+              "form": "mette",
+              "english": "you put (formal)"
+            },
+            "noi": {
+              "form": "mettiamo",
+              "english": "we put"
+            },
+            "voi": {
+              "form": "mettete",
+              "english": "you all put"
+            },
+            "loro": {
+              "form": "mettono",
+              "english": "they put"
+            }
+          }
+        },
+        "passato_prossimo": {
+          "forms": {
+            "io": {
+              "form": "ho messo",
+              "english": "I put/have put"
+            },
+            "tu": {
+              "form": "hai messo",
+              "english": "you put/have put"
+            },
+            "lui": {
+              "form": "ha messo",
+              "english": "he put/has put"
+            },
+            "lei": {
+              "form": "ha messo",
+              "english": "she put/has put"
+            },
+            "Lei": {
+              "form": "ha messo",
+              "english": "you put/have put (formal)"
+            },
+            "noi": {
+              "form": "abbiamo messo",
+              "english": "we put/have put"
+            },
+            "voi": {
+              "form": "avete messo",
+              "english": "you all put/have put"
+            },
+            "loro": {
+              "form": "hanno messo",
+              "english": "they put/have put"
+            }
+          }
+        },
+        "futuro_semplice": {
+          "forms": {
+            "io": {
+              "form": "metterò",
+              "english": "I will put"
+            },
+            "tu": {
+              "form": "metterai",
+              "english": "you will put"
+            },
+            "lui": {
+              "form": "metterà",
+              "english": "he will put"
+            },
+            "lei": {
+              "form": "metterà",
+              "english": "she will put"
+            },
+            "Lei": {
+              "form": "metterà",
+              "english": "you will put (formal)"
+            },
+            "noi": {
+              "form": "metteremo",
+              "english": "we will put"
+            },
+            "voi": {
+              "form": "metterete",
+              "english": "you all will put"
+            },
+            "loro": {
+              "form": "metteranno",
+              "english": "they will put"
+            }
+          }
+        }
+      },
+      "characteristics": {
+        "transitive": true,
+        "reflexive": false,
+        "auxiliary_verb": "avere",
+        "prepositions_used": [
+          "su",
+          "in"
+        ]
+      },
+      "tags": [
+        "common",
+        "actions",
+        "a1_level"
+      ]
+    },
+    {
+      "infinitive": "uscire",
+      "infinitive_english": [
+        "to go out",
+        "to exit"
+      ],
+      "verb_type": "irregular",
+      "conjugation_group": "irregular",
+      "difficulty_level": "intermediate",
+      "tenses": {
+        "presente": {
+          "forms": {
+            "io": {
+              "form": "esco",
+              "english": [
+                "I go out",
+                "I exit"
+              ]
+            },
+            "tu": {
+              "form": "esci",
+              "english": [
+                "you go out",
+                "you exit"
+              ]
+            },
+            "lui": {
+              "form": "esce",
+              "english": [
+                "he goes out",
+                "he exits"
+              ]
+            },
+            "lei": {
+              "form": "esce",
+              "english": [
+                "she goes out",
+                "she exits"
+              ]
+            },
+            "Lei": {
+              "form": "esce",
+              "english": [
+                "you go out",
+                "you exit"
+              ]
+            },
+            "noi": {
+              "form": "usciamo",
+              "english": [
+                "we go out",
+                "we exit"
+              ]
+            },
+            "voi": {
+              "form": "uscite",
+              "english": [
+                "you all go out",
+                "you all exit"
+              ]
+            },
+            "loro": {
+              "form": "escono",
+              "english": [
+                "they go out",
+                "they exit"
+              ]
+            }
+          }
+        },
+        "passato_prossimo": {
+          "forms": {
+            "io": {
+              "form_masculine": "sono uscito",
+              "form_feminine": "sono uscita",
+              "english": "I went out/have gone out"
+            },
+            "tu": {
+              "form_masculine": "sei uscito",
+              "form_feminine": "sei uscita",
+              "english": "you went out/have gone out"
+            },
+            "lui": {
+              "form": "è uscito",
+              "english": "he went out/has gone out"
+            },
+            "lei": {
+              "form": "è uscita",
+              "english": "she went out/has gone out"
+            },
+            "Lei": {
+              "form_masculine": "è uscito",
+              "form_feminine": "è uscita",
+              "english": "you went out/have gone out (formal)"
+            },
+            "noi": {
+              "form_masculine": "siamo usciti",
+              "form_feminine": "siamo uscite",
+              "form_mixed": "siamo usciti",
+              "english": "we went out/have gone out"
+            },
+            "voi": {
+              "form_masculine": "siete usciti",
+              "form_feminine": "siete uscite",
+              "form_mixed": "siete usciti",
+              "english": "you all went out/have gone out"
+            },
+            "loro": {
+              "form_masculine": "sono usciti",
+              "form_feminine": "sono uscite",
+              "form_mixed": "sono usciti",
+              "english": "they went out/have gone out"
+            }
+          }
+        },
+        "futuro_semplice": {
+          "forms": {
+            "io": {
+              "form": "uscirò",
+              "english": [
+                "I will go out",
+                "I will exit"
+              ]
+            },
+            "tu": {
+              "form": "uscirai",
+              "english": [
+                "you will go out",
+                "you will exit"
+              ]
+            },
+            "lui": {
+              "form": "uscirà",
+              "english": [
+                "he will go out",
+                "he will exit"
+              ]
+            },
+            "lei": {
+              "form": "uscirà",
+              "english": [
+                "she will go out",
+                "she will exit"
+              ]
+            },
+            "Lei": {
+              "form": "uscirà",
+              "english": [
+                "you will go out",
+                "you will exit"
+              ]
+            },
+            "noi": {
+              "form": "usciremo",
+              "english": [
+                "we will go out",
+                "we will exit"
+              ]
+            },
+            "voi": {
+              "form": "uscirete",
+              "english": [
+                "you all will go out",
+                "you all will exit"
+              ]
+            },
+            "loro": {
+              "form": "usciranno",
+              "english": [
+                "they will go out",
+                "they will exit"
+              ]
+            }
+          }
+        }
+      },
+      "characteristics": {
+        "transitive": false,
+        "reflexive": false,
+        "auxiliary_verb": "essere",
+        "prepositions_used": [
+          "da",
+          "con",
+          "per"
+        ]
+      },
+      "tags": [
+        "movement",
+        "irregular",
+        "a2_level"
+      ]
+    },
+    {
+      "infinitive": "tornare",
+      "infinitive_english": [
+        "to return",
+        "to come back"
+      ],
+      "verb_type": "regular",
+      "conjugation_group": "-are",
+      "difficulty_level": "beginner",
+      "tenses": {
+        "presente": {
+          "forms": {
+            "io": {
+              "form": "torno",
+              "english": [
+                "I return",
+                "I come back"
+              ]
+            },
+            "tu": {
+              "form": "torni",
+              "english": [
+                "you return",
+                "you come back"
+              ]
+            },
+            "lui": {
+              "form": "torna",
+              "english": [
+                "he returns",
+                "he comes back"
+              ]
+            },
+            "lei": {
+              "form": "torna",
+              "english": [
+                "she returns",
+                "she comes back"
+              ]
+            },
+            "Lei": {
+              "form": "torna",
+              "english": [
+                "you return",
+                "you come back"
+              ]
+            },
+            "noi": {
+              "form": "torniamo",
+              "english": [
+                "we return",
+                "we come back"
+              ]
+            },
+            "voi": {
+              "form": "tornate",
+              "english": [
+                "you all return",
+                "you all come back"
+              ]
+            },
+            "loro": {
+              "form": "tornano",
+              "english": [
+                "they return",
+                "they come back"
+              ]
+            }
+          }
+        },
+        "passato_prossimo": {
+          "forms": {
+            "io": {
+              "form_masculine": "sono tornato",
+              "form_feminine": "sono tornata",
+              "english": "I returned/have returned"
+            },
+            "tu": {
+              "form_masculine": "sei tornato",
+              "form_feminine": "sei tornata",
+              "english": "you returned/have returned"
+            },
+            "lui": {
+              "form": "è tornato",
+              "english": "he returned/has returned"
+            },
+            "lei": {
+              "form": "è tornata",
+              "english": "she returned/has returned"
+            },
+            "Lei": {
+              "form_masculine": "è tornato",
+              "form_feminine": "è tornata",
+              "english": "you returned/have returned (formal)"
+            },
+            "noi": {
+              "form_masculine": "siamo tornati",
+              "form_feminine": "siamo tornate",
+              "form_mixed": "siamo tornati",
+              "english": "we returned/have returned"
+            },
+            "voi": {
+              "form_masculine": "siete tornati",
+              "form_feminine": "siete tornate",
+              "form_mixed": "siete tornati",
+              "english": "you all returned/have returned"
+            },
+            "loro": {
+              "form_masculine": "sono tornati",
+              "form_feminine": "sono tornate",
+              "form_mixed": "sono tornati",
+              "english": "they returned/have returned"
+            }
+          }
+        },
+        "futuro_semplice": {
+          "forms": {
+            "io": {
+              "form": "tornerò",
+              "english": [
+                "I will return",
+                "I will come back"
+              ]
+            },
+            "tu": {
+              "form": "tornerai",
+              "english": [
+                "you will return",
+                "you will come back"
+              ]
+            },
+            "lui": {
+              "form": "tornerà",
+              "english": [
+                "he will return",
+                "he will come back"
+              ]
+            },
+            "lei": {
+              "form": "tornerà",
+              "english": [
+                "she will return",
+                "she will come back"
+              ]
+            },
+            "Lei": {
+              "form": "tornerà",
+              "english": [
+                "you will return",
+                "you will come back"
+              ]
+            },
+            "noi": {
+              "form": "torneremo",
+              "english": [
+                "we will return",
+                "we will come back"
+              ]
+            },
+            "voi": {
+              "form": "tornerete",
+              "english": [
+                "you all will return",
+                "you all will come back"
+              ]
+            },
+            "loro": {
+              "form": "torneranno",
+              "english": [
+                "they will return",
+                "they will come back"
+              ]
+            }
+          }
+        }
+      },
+      "characteristics": {
+        "transitive": false,
+        "reflexive": false,
+        "auxiliary_verb": "essere",
+        "prepositions_used": [
+          "a",
+          "da",
+          "in"
+        ]
+      },
+      "tags": [
+        "movement",
+        "common",
+        "a1_level"
+      ]
+    },
+    {
+      "infinitive": "venire",
+      "infinitive_english": "to come",
+      "verb_type": "irregular",
+      "conjugation_group": "irregular",
+      "difficulty_level": "beginner",
+      "tenses": {
+        "presente": {
+          "forms": {
+            "io": {
+              "form": "vengo",
+              "english": "I come"
+            },
+            "tu": {
+              "form": "vieni",
+              "english": "you come"
+            },
+            "lui": {
+              "form": "viene",
+              "english": "he comes"
+            },
+            "lei": {
+              "form": "viene",
+              "english": "she comes"
+            },
+            "Lei": {
+              "form": "viene",
+              "english": "you come (formal)"
+            },
+            "noi": {
+              "form": "veniamo",
+              "english": "we come"
+            },
+            "voi": {
+              "form": "venite",
+              "english": "you all come"
+            },
+            "loro": {
+              "form": "vengono",
+              "english": "they come"
+            }
+          }
+        },
+        "passato_prossimo": {
+          "forms": {
+            "io": {
+              "form_masculine": "sono venuto",
+              "form_feminine": "sono venuta",
+              "english": "I came/have come"
+            },
+            "tu": {
+              "form_masculine": "sei venuto",
+              "form_feminine": "sei venuta",
+              "english": "you came/have come"
+            },
+            "lui": {
+              "form": "è venuto",
+              "english": "he came/has come"
+            },
+            "lei": {
+              "form": "è venuta",
+              "english": "she came/has come"
+            },
+            "Lei": {
+              "form_masculine": "è venuto",
+              "form_feminine": "è venuta",
+              "english": "you came/have come (formal)"
+            },
+            "noi": {
+              "form_masculine": "siamo venuti",
+              "form_feminine": "siamo venute",
+              "form_mixed": "siamo venuti",
+              "english": "we came/have come"
+            },
+            "voi": {
+              "form_masculine": "siete venuti",
+              "form_feminine": "siete venute",
+              "form_mixed": "siete venuti",
+              "english": "you all came/have come"
+            },
+            "loro": {
+              "form_masculine": "sono venuti",
+              "form_feminine": "sono venute",
+              "form_mixed": "sono venuti",
+              "english": "they came/have come"
+            }
+          }
+        },
+        "futuro_semplice": {
+          "forms": {
+            "io": {
+              "form": "verrò",
+              "english": "I will come"
+            },
+            "tu": {
+              "form": "verrai",
+              "english": "you will come"
+            },
+            "lui": {
+              "form": "verrà",
+              "english": "he will come"
+            },
+            "lei": {
+              "form": "verrà",
+              "english": "she will come"
+            },
+            "Lei": {
+              "form": "verrà",
+              "english": "you will come (formal)"
+            },
+            "noi": {
+              "form": "verremo",
+              "english": "we will come"
+            },
+            "voi": {
+              "form": "verrete",
+              "english": "you all will come"
+            },
+            "loro": {
+              "form": "verranno",
+              "english": "they will come"
+            }
+          }
+        }
+      },
+      "characteristics": {
+        "transitive": false,
+        "reflexive": false,
+        "auxiliary_verb": "essere",
+        "prepositions_used": [
+          "a",
+          "da",
+          "in"
+        ]
+      },
+      "tags": [
+        "essential",
+        "movement",
+        "irregular",
+        "a1_level"
+      ]
+    },
+    {
+      "infinitive": "dare",
+      "infinitive_english": "to give",
+      "verb_type": "irregular",
+      "conjugation_group": "irregular",
+      "difficulty_level": "beginner",
+      "tenses": {
+        "presente": {
+          "forms": {
+            "io": {
+              "form": "do",
+              "english": "I give"
+            },
+            "tu": {
+              "form": "dai",
+              "english": "you give"
+            },
+            "lui": {
+              "form": "dà",
+              "english": "he gives"
+            },
+            "lei": {
+              "form": "dà",
+              "english": "she gives"
+            },
+            "Lei": {
+              "form": "dà",
+              "english": "you give (formal)"
+            },
+            "noi": {
+              "form": "diamo",
+              "english": "we give"
+            },
+            "voi": {
+              "form": "date",
+              "english": "you all give"
+            },
+            "loro": {
+              "form": "danno",
+              "english": "they give"
+            }
+          }
+        },
+        "passato_prossimo": {
+          "forms": {
+            "io": {
+              "form": "ho dato",
+              "english": "I gave/have given"
+            },
+            "tu": {
+              "form": "hai dato",
+              "english": "you gave/have given"
+            },
+            "lui": {
+              "form": "ha dato",
+              "english": "he gave/has given"
+            },
+            "lei": {
+              "form": "ha dato",
+              "english": "she gave/has given"
+            },
+            "Lei": {
+              "form": "ha dato",
+              "english": "you gave/have given (formal)"
+            },
+            "noi": {
+              "form": "abbiamo dato",
+              "english": "we gave/have given"
+            },
+            "voi": {
+              "form": "avete dato",
+              "english": "you all gave/have given"
+            },
+            "loro": {
+              "form": "hanno dato",
+              "english": "they gave/have given"
+            }
+          }
+        },
+        "futuro_semplice": {
+          "forms": {
+            "io": {
+              "form": "darò",
+              "english": "I will give"
+            },
+            "tu": {
+              "form": "darai",
+              "english": "you will give"
+            },
+            "lui": {
+              "form": "darà",
+              "english": "he will give"
+            },
+            "lei": {
+              "form": "darà",
+              "english": "she will give"
+            },
+            "Lei": {
+              "form": "darà",
+              "english": "you will give (formal)"
+            },
+            "noi": {
+              "form": "daremo",
+              "english": "we will give"
+            },
+            "voi": {
+              "form": "darete",
+              "english": "you all will give"
+            },
+            "loro": {
+              "form": "daranno",
+              "english": "they will give"
+            }
+          }
+        }
+      },
+      "characteristics": {
+        "transitive": true,
+        "reflexive": false,
+        "auxiliary_verb": "avere",
+        "prepositions_used": [
+          "a"
+        ]
+      },
+      "tags": [
+        "common",
+        "irregular",
+        "a1_level"
+      ]
+    },
+    {
+      "infinitive": "stare",
+      "infinitive_english": [
+        "to stay",
+        "to be"
+      ],
+      "english_note": "to be (for health/location)",
+      "verb_type": "irregular",
+      "conjugation_group": "irregular",
+      "difficulty_level": "beginner",
+      "tenses": {
+        "presente": {
+          "forms": {
+            "io": {
+              "form": "sto",
+              "english": [
+                "I stay",
+                "I am"
+              ]
+            },
+            "tu": {
+              "form": "stai",
+              "english": [
+                "you stay",
+                "you are"
+              ]
+            },
+            "lui": {
+              "form": "sta",
+              "english": [
+                "he stays",
+                "he is"
+              ]
+            },
+            "lei": {
+              "form": "sta",
+              "english": [
+                "she stays",
+                "she is"
+              ]
+            },
+            "Lei": {
+              "form": "sta",
+              "english": [
+                "you stay",
+                "you are"
+              ]
+            },
+            "noi": {
+              "form": "stiamo",
+              "english": [
+                "we stay",
+                "we are"
+              ]
+            },
+            "voi": {
+              "form": "state",
+              "english": [
+                "you all stay",
+                "you all are"
+              ]
+            },
+            "loro": {
+              "form": "stanno",
+              "english": [
+                "they stay",
+                "they are"
+              ]
+            }
+          }
+        },
+        "passato_prossimo": {
+          "forms": {
+            "io": {
+              "form_masculine": "sono stato",
+              "form_feminine": "sono stata",
+              "english": [
+                "I stayed/have stayed",
+                "I was/have been"
+              ]
+            },
+            "tu": {
+              "form_masculine": "sei stato",
+              "form_feminine": "sei stata",
+              "english": [
+                "you stayed/have stayed",
+                "you were/have been"
+              ]
+            },
+            "lui": {
+              "form": "è stato",
+              "english": [
+                "he stayed/has stayed",
+                "he was/has been"
+              ]
+            },
+            "lei": {
+              "form": "è stata",
+              "english": [
+                "she stayed/has stayed",
+                "she was/has been"
+              ]
+            },
+            "Lei": {
+              "form_masculine": "è stato",
+              "form_feminine": "è stata",
+              "english": [
+                "you stayed/have stayed",
+                "you were/have been"
+              ]
+            },
+            "noi": {
+              "form_masculine": "siamo stati",
+              "form_feminine": "siamo state",
+              "form_mixed": "siamo stati",
+              "english": [
+                "we stayed/have stayed",
+                "we were/have been"
+              ]
+            },
+            "voi": {
+              "form_masculine": "siete stati",
+              "form_feminine": "siete state",
+              "form_mixed": "siete stati",
+              "english": [
+                "you all stayed/have stayed",
+                "you all were/have been"
+              ]
+            },
+            "loro": {
+              "form_masculine": "sono stati",
+              "form_feminine": "sono state",
+              "form_mixed": "sono stati",
+              "english": [
+                "they stayed/have stayed",
+                "they were/have been"
+              ]
+            }
+          }
+        },
+        "futuro_semplice": {
+          "forms": {
+            "io": {
+              "form": "starò",
+              "english": [
+                "I will stay",
+                "I will be"
+              ]
+            },
+            "tu": {
+              "form": "starai",
+              "english": [
+                "you will stay",
+                "you will be"
+              ]
+            },
+            "lui": {
+              "form": "starà",
+              "english": [
+                "he will stay",
+                "he will be"
+              ]
+            },
+            "lei": {
+              "form": "starà",
+              "english": [
+                "she will stay",
+                "she will be"
+              ]
+            },
+            "Lei": {
+              "form": "starà",
+              "english": [
+                "you will stay",
+                "you will be"
+              ]
+            },
+            "noi": {
+              "form": "staremo",
+              "english": [
+                "we will stay",
+                "we will be"
+              ]
+            },
+            "voi": {
+              "form": "starete",
+              "english": [
+                "you all will stay",
+                "you all will be"
+              ]
+            },
+            "loro": {
+              "form": "staranno",
+              "english": [
+                "they will stay",
+                "they will be"
+              ]
+            }
+          }
+        }
+      },
+      "characteristics": {
+        "transitive": false,
+        "reflexive": false,
+        "auxiliary_verb": "essere",
+        "prepositions_used": [
+          "a",
+          "in",
+          "con"
+        ]
+      },
+      "tags": [
+        "essential",
+        "irregular",
+        "common",
+        "a1_level"
+      ]
+    },
+    {
+      "infinitive": "sentire",
+      "infinitive_english": [
+        "to hear",
+        "to feel"
+      ],
+      "verb_type": "regular",
+      "conjugation_group": "-ire",
+      "difficulty_level": "beginner",
+      "tenses": {
+        "presente": {
+          "forms": {
+            "io": {
+              "form": "sento",
+              "english": [
+                "I hear",
+                "I feel"
+              ]
+            },
+            "tu": {
+              "form": "senti",
+              "english": [
+                "you hear",
+                "you feel"
+              ]
+            },
+            "lui": {
+              "form": "sente",
+              "english": [
+                "he hears",
+                "he feels"
+              ]
+            },
+            "lei": {
+              "form": "sente",
+              "english": [
+                "she hears",
+                "she feels"
+              ]
+            },
+            "Lei": {
+              "form": "sente",
+              "english": [
+                "you hear",
+                "you feel"
+              ]
+            },
+            "noi": {
+              "form": "sentiamo",
+              "english": [
+                "we hear",
+                "we feel"
+              ]
+            },
+            "voi": {
+              "form": "sentite",
+              "english": [
+                "you all hear",
+                "you all feel"
+              ]
+            },
+            "loro": {
+              "form": "sentono",
+              "english": [
+                "they hear",
+                "they feel"
+              ]
+            }
+          }
+        },
+        "passato_prossimo": {
+          "forms": {
+            "io": {
+              "form": "ho sentito",
+              "english": [
+                "I heard/have heard",
+                "I felt/have felt"
+              ]
+            },
+            "tu": {
+              "form": "hai sentito",
+              "english": [
+                "you heard/have heard",
+                "you felt/have felt"
+              ]
+            },
+            "lui": {
+              "form": "ha sentito",
+              "english": [
+                "he heard/has heard",
+                "he felt/has felt"
+              ]
+            },
+            "lei": {
+              "form": "ha sentito",
+              "english": [
+                "she heard/has heard",
+                "she felt/has felt"
+              ]
+            },
+            "Lei": {
+              "form": "ha sentito",
+              "english": [
+                "you heard/have heard",
+                "you felt/have felt"
+              ]
+            },
+            "noi": {
+              "form": "abbiamo sentito",
+              "english": [
+                "we heard/have heard",
+                "we felt/have felt"
+              ]
+            },
+            "voi": {
+              "form": "avete sentito",
+              "english": [
+                "you all heard/have heard",
+                "you all felt/have felt"
+              ]
+            },
+            "loro": {
+              "form": "hanno sentito",
+              "english": [
+                "they heard/have heard",
+                "they felt/have felt"
+              ]
+            }
+          }
+        },
+        "futuro_semplice": {
+          "forms": {
+            "io": {
+              "form": "sentirò",
+              "english": [
+                "I will hear",
+                "I will feel"
+              ]
+            },
+            "tu": {
+              "form": "sentirai",
+              "english": [
+                "you will hear",
+                "you will feel"
+              ]
+            },
+            "lui": {
+              "form": "sentirà",
+              "english": [
+                "he will hear",
+                "he will feel"
+              ]
+            },
+            "lei": {
+              "form": "sentirà",
+              "english": [
+                "she will hear",
+                "she will feel"
+              ]
+            },
+            "Lei": {
+              "form": "sentirà",
+              "english": [
+                "you will hear",
+                "you will feel"
+              ]
+            },
+            "noi": {
+              "form": "sentiremo",
+              "english": [
+                "we will hear",
+                "we will feel"
+              ]
+            },
+            "voi": {
+              "form": "sentirete",
+              "english": [
+                "you all will hear",
+                "you all will feel"
+              ]
+            },
+            "loro": {
+              "form": "sentiranno",
+              "english": [
+                "they will hear",
+                "they will feel"
+              ]
+            }
+          }
+        }
+      },
+      "characteristics": {
+        "transitive": true,
+        "reflexive": false,
+        "auxiliary_verb": "avere",
+        "prepositions_used": [
+          "di",
+          "da"
+        ]
+      },
+      "tags": [
+        "senses",
+        "common",
+        "a1_level"
+      ]
+    },
+    {
+      "infinitive": "guardare",
+      "infinitive_english": [
+        "to look at",
+        "to watch"
+      ],
+      "verb_type": "regular",
+      "conjugation_group": "-are",
+      "difficulty_level": "beginner",
+      "tenses": {
+        "presente": {
+          "forms": {
+            "io": {
+              "form": "guardo",
+              "english": [
+                "I look at",
+                "I watch"
+              ]
+            },
+            "tu": {
+              "form": "guardi",
+              "english": [
+                "you look at",
+                "you watch"
+              ]
+            },
+            "lui": {
+              "form": "guarda",
+              "english": [
+                "he looks at",
+                "he watches"
+              ]
+            },
+            "lei": {
+              "form": "guarda",
+              "english": [
+                "she looks at",
+                "she watches"
+              ]
+            },
+            "Lei": {
+              "form": "guarda",
+              "english": [
+                "you look at",
+                "you watch"
+              ]
+            },
+            "noi": {
+              "form": "guardiamo",
+              "english": [
+                "we look at",
+                "we watch"
+              ]
+            },
+            "voi": {
+              "form": "guardate",
+              "english": [
+                "you all look at",
+                "you all watch"
+              ]
+            },
+            "loro": {
+              "form": "guardano",
+              "english": [
+                "they look at",
+                "they watch"
+              ]
+            }
+          }
+        },
+        "passato_prossimo": {
+          "forms": {
+            "io": {
+              "form": "ho guardato",
+              "english": [
+                "I looked at/have looked at",
+                "I watched/have watched"
+              ]
+            },
+            "tu": {
+              "form": "hai guardato",
+              "english": [
+                "you looked at/have looked at",
+                "you watched/have watched"
+              ]
+            },
+            "lui": {
+              "form": "ha guardato",
+              "english": [
+                "he looked at/has looked at",
+                "he watched/has watched"
+              ]
+            },
+            "lei": {
+              "form": "ha guardato",
+              "english": [
+                "she looked at/has looked at",
+                "she watched/has watched"
+              ]
+            },
+            "Lei": {
+              "form": "ha guardato",
+              "english": [
+                "you looked at/have looked at",
+                "you watched/have watched"
+              ]
+            },
+            "noi": {
+              "form": "abbiamo guardato",
+              "english": [
+                "we looked at/have looked at",
+                "we watched/have watched"
+              ]
+            },
+            "voi": {
+              "form": "avete guardato",
+              "english": [
+                "you all looked at/have looked at",
+                "you all watched/have watched"
+              ]
+            },
+            "loro": {
+              "form": "hanno guardato",
+              "english": [
+                "they looked at/have looked at",
+                "they watched/have watched"
+              ]
+            }
+          }
+        },
+        "futuro_semplice": {
+          "forms": {
+            "io": {
+              "form": "guarderò",
+              "english": [
+                "I will look at",
+                "I will watch"
+              ]
+            },
+            "tu": {
+              "form": "guarderai",
+              "english": [
+                "you will look at",
+                "you will watch"
+              ]
+            },
+            "lui": {
+              "form": "guarderà",
+              "english": [
+                "he will look at",
+                "he will watch"
+              ]
+            },
+            "lei": {
+              "form": "guarderà",
+              "english": [
+                "she will look at",
+                "she will watch"
+              ]
+            },
+            "Lei": {
+              "form": "guarderà",
+              "english": [
+                "you will look at",
+                "you will watch"
+              ]
+            },
+            "noi": {
+              "form": "guarderemo",
+              "english": [
+                "we will look at",
+                "we will watch"
+              ]
+            },
+            "voi": {
+              "form": "guarderete",
+              "english": [
+                "you all will look at",
+                "you all will watch"
+              ]
+            },
+            "loro": {
+              "form": "guarderanno",
+              "english": [
+                "they will look at",
+                "they will watch"
+              ]
+            }
+          }
+        }
+      },
+      "characteristics": {
+        "transitive": true,
+        "reflexive": false,
+        "auxiliary_verb": "avere",
+        "prepositions_used": [
+          "a",
+          "verso"
+        ]
+      },
+      "tags": [
+        "senses",
+        "common",
+        "a1_level"
+      ]
+    },
+    {
+      "infinitive": "credere",
+      "infinitive_english": "to believe",
+      "verb_type": "regular",
+      "conjugation_group": "-ere",
+      "difficulty_level": "beginner",
+      "tenses": {
+        "presente": {
+          "forms": {
+            "io": {
+              "form": "credo",
+              "english": "I believe"
+            },
+            "tu": {
+              "form": "credi",
+              "english": "you believe"
+            },
+            "lui": {
+              "form": "crede",
+              "english": "he believes"
+            },
+            "lei": {
+              "form": "crede",
+              "english": "she believes"
+            },
+            "Lei": {
+              "form": "crede",
+              "english": "you believe (formal)"
+            },
+            "noi": {
+              "form": "crediamo",
+              "english": "we believe"
+            },
+            "voi": {
+              "form": "credete",
+              "english": "you all believe"
+            },
+            "loro": {
+              "form": "credono",
+              "english": "they believe"
+            }
+          }
+        },
+        "passato_prossimo": {
+          "forms": {
+            "io": {
+              "form": "ho creduto",
+              "english": "I believed/have believed"
+            },
+            "tu": {
+              "form": "hai creduto",
+              "english": "you believed/have believed"
+            },
+            "lui": {
+              "form": "ha creduto",
+              "english": "he believed/has believed"
+            },
+            "lei": {
+              "form": "ha creduto",
+              "english": "she believed/has believed"
+            },
+            "Lei": {
+              "form": "ha creduto",
+              "english": "you believed/have believed (formal)"
+            },
+            "noi": {
+              "form": "abbiamo creduto",
+              "english": "we believed/have believed"
+            },
+            "voi": {
+              "form": "avete creduto",
+              "english": "you all believed/have believed"
+            },
+            "loro": {
+              "form": "hanno creduto",
+              "english": "they believed/have believed"
+            }
+          }
+        },
+        "futuro_semplice": {
+          "forms": {
+            "io": {
+              "form": "crederò",
+              "english": "I will believe"
+            },
+            "tu": {
+              "form": "crederai",
+              "english": "you will believe"
+            },
+            "lui": {
+              "form": "crederà",
+              "english": "he will believe"
+            },
+            "lei": {
+              "form": "crederà",
+              "english": "she will believe"
+            },
+            "Lei": {
+              "form": "crederà",
+              "english": "you will believe (formal)"
+            },
+            "noi": {
+              "form": "crederemo",
+              "english": "we will believe"
+            },
+            "voi": {
+              "form": "crederete",
+              "english": "you all will believe"
+            },
+            "loro": {
+              "form": "crederanno",
+              "english": "they will believe"
+            }
+          }
+        }
+      },
+      "characteristics": {
+        "transitive": true,
+        "reflexive": false,
+        "auxiliary_verb": "avere",
+        "prepositions_used": [
+          "a",
+          "in"
+        ]
+      },
+      "tags": [
+        "common",
+        "ideas",
+        "a1_level"
+      ]
+    },
+    {
+      "infinitive": "aprire",
+      "infinitive_english": "to open",
+      "verb_type": "regular",
+      "conjugation_group": "-ire",
+      "difficulty_level": "beginner",
+      "tenses": {
+        "presente": {
+          "forms": {
+            "io": {
+              "form": "apro",
+              "english": "I open"
+            },
+            "tu": {
+              "form": "apri",
+              "english": "you open"
+            },
+            "lui": {
+              "form": "apre",
+              "english": "he opens"
+            },
+            "lei": {
+              "form": "apre",
+              "english": "she opens"
+            },
+            "Lei": {
+              "form": "apre",
+              "english": "you open (formal)"
+            },
+            "noi": {
+              "form": "apriamo",
+              "english": "we open"
+            },
+            "voi": {
+              "form": "aprite",
+              "english": "you all open"
+            },
+            "loro": {
+              "form": "aprono",
+              "english": "they open"
+            }
+          }
+        },
+        "passato_prossimo": {
+          "forms": {
+            "io": {
+              "form": "ho aperto",
+              "english": "I opened/have opened"
+            },
+            "tu": {
+              "form": "hai aperto",
+              "english": "you opened/have opened"
+            },
+            "lui": {
+              "form": "ha aperto",
+              "english": "he opened/has opened"
+            },
+            "lei": {
+              "form": "ha aperto",
+              "english": "she opened/has opened"
+            },
+            "Lei": {
+              "form": "ha aperto",
+              "english": "you opened/have opened (formal)"
+            },
+            "noi": {
+              "form": "abbiamo aperto",
+              "english": "we opened/have opened"
+            },
+            "voi": {
+              "form": "avete aperto",
+              "english": "you all opened/have opened"
+            },
+            "loro": {
+              "form": "hanno aperto",
+              "english": "they opened/have opened"
+            }
+          }
+        },
+        "futuro_semplice": {
+          "forms": {
+            "io": {
+              "form": "aprirò",
+              "english": "I will open"
+            },
+            "tu": {
+              "form": "aprirai",
+              "english": "you will open"
+            },
+            "lui": {
+              "form": "aprirà",
+              "english": "he will open"
+            },
+            "lei": {
+              "form": "aprirà",
+              "english": "she will open"
+            },
+            "Lei": {
+              "form": "aprirà",
+              "english": "you will open (formal)"
+            },
+            "noi": {
+              "form": "apriremo",
+              "english": "we will open"
+            },
+            "voi": {
+              "form": "aprirete",
+              "english": "you all will open"
+            },
+            "loro": {
+              "form": "apriranno",
+              "english": "they will open"
+            }
+          }
+        }
+      },
+      "characteristics": {
+        "transitive": true,
+        "reflexive": false,
+        "auxiliary_verb": "avere",
+        "prepositions_used": []
+      },
+      "tags": [
+        "common",
+        "actions",
+        "a1_level"
+      ]
+    },
+    {
+      "infinitive": "chiudere",
+      "infinitive_english": "to close",
+      "verb_type": "regular",
+      "conjugation_group": "-ere",
+      "difficulty_level": "beginner",
+      "tenses": {
+        "presente": {
+          "forms": {
+            "io": {
+              "form": "chiudo",
+              "english": "I close"
+            },
+            "tu": {
+              "form": "chiudi",
+              "english": "you close"
+            },
+            "lui": {
+              "form": "chiude",
+              "english": "he closes"
+            },
+            "lei": {
+              "form": "chiude",
+              "english": "she closes"
+            },
+            "Lei": {
+              "form": "chiude",
+              "english": "you close (formal)"
+            },
+            "noi": {
+              "form": "chiudiamo",
+              "english": "we close"
+            },
+            "voi": {
+              "form": "chiudete",
+              "english": "you all close"
+            },
+            "loro": {
+              "form": "chiudono",
+              "english": "they close"
+            }
+          }
+        },
+        "passato_prossimo": {
+          "forms": {
+            "io": {
+              "form": "ho chiuso",
+              "english": "I closed/have closed"
+            },
+            "tu": {
+              "form": "hai chiuso",
+              "english": "you closed/have closed"
+            },
+            "lui": {
+              "form": "ha chiuso",
+              "english": "he closed/has closed"
+            },
+            "lei": {
+              "form": "ha chiuso",
+              "english": "she closed/has closed"
+            },
+            "Lei": {
+              "form": "ha chiuso",
+              "english": "you closed/have closed (formal)"
+            },
+            "noi": {
+              "form": "abbiamo chiuso",
+              "english": "we closed/have closed"
+            },
+            "voi": {
+              "form": "avete chiuso",
+              "english": "you all closed/have closed"
+            },
+            "loro": {
+              "form": "hanno chiuso",
+              "english": "they closed/have closed"
+            }
+          }
+        },
+        "futuro_semplice": {
+          "forms": {
+            "io": {
+              "form": "chiuderò",
+              "english": "I will close"
+            },
+            "tu": {
+              "form": "chiuderai",
+              "english": "you will close"
+            },
+            "lui": {
+              "form": "chiuderà",
+              "english": "he will close"
+            },
+            "lei": {
+              "form": "chiuderà",
+              "english": "she will close"
+            },
+            "Lei": {
+              "form": "chiuderà",
+              "english": "you will close (formal)"
+            },
+            "noi": {
+              "form": "chiuderemo",
+              "english": "we will close"
+            },
+            "voi": {
+              "form": "chiuderete",
+              "english": "you all will close"
+            },
+            "loro": {
+              "form": "chiuderanno",
+              "english": "they will close"
+            }
+          }
+        }
+      },
+      "characteristics": {
+        "transitive": true,
+        "reflexive": false,
+        "auxiliary_verb": "avere",
+        "prepositions_used": []
+      },
+      "tags": [
+        "common",
+        "actions",
+        "a1_level"
+      ]
+    },
+    {
+      "infinitive": "trovare",
+      "infinitive_english": "to find",
+      "verb_type": "regular",
+      "conjugation_group": "-are",
+      "difficulty_level": "beginner",
+      "tenses": {
+        "presente": {
+          "forms": {
+            "io": {
+              "form": "trovo",
+              "english": "I find"
+            },
+            "tu": {
+              "form": "trovi",
+              "english": "you find"
+            },
+            "lui": {
+              "form": "trova",
+              "english": "he finds"
+            },
+            "lei": {
+              "form": "trova",
+              "english": "she finds"
+            },
+            "Lei": {
+              "form": "trova",
+              "english": "you find (formal)"
+            },
+            "noi": {
+              "form": "troviamo",
+              "english": "we find"
+            },
+            "voi": {
+              "form": "trovate",
+              "english": "you all find"
+            },
+            "loro": {
+              "form": "trovano",
+              "english": "they find"
+            }
+          }
+        },
+        "passato_prossimo": {
+          "forms": {
+            "io": {
+              "form": "ho trovato",
+              "english": "I found/have found"
+            },
+            "tu": {
+              "form": "hai trovato",
+              "english": "you found/have found"
+            },
+            "lui": {
+              "form": "ha trovato",
+              "english": "he found/has found"
+            },
+            "lei": {
+              "form": "ha trovato",
+              "english": "she found/has found"
+            },
+            "Lei": {
+              "form": "ha trovato",
+              "english": "you found/have found (formal)"
+            },
+            "noi": {
+              "form": "abbiamo trovato",
+              "english": "we found/have found"
+            },
+            "voi": {
+              "form": "avete trovato",
+              "english": "you all found/have found"
+            },
+            "loro": {
+              "form": "hanno trovato",
+              "english": "they found/have found"
+            }
+          }
+        },
+        "futuro_semplice": {
+          "forms": {
+            "io": {
+              "form": "troverò",
+              "english": "I will find"
+            },
+            "tu": {
+              "form": "troverai",
+              "english": "you will find"
+            },
+            "lui": {
+              "form": "troverà",
+              "english": "he will find"
+            },
+            "lei": {
+              "form": "troverà",
+              "english": "she will find"
+            },
+            "Lei": {
+              "form": "troverà",
+              "english": "you will find (formal)"
+            },
+            "noi": {
+              "form": "troveremo",
+              "english": "we will find"
+            },
+            "voi": {
+              "form": "troverete",
+              "english": "you all will find"
+            },
+            "loro": {
+              "form": "troveranno",
+              "english": "they will find"
+            }
+          }
+        }
+      },
+      "characteristics": {
+        "transitive": true,
+        "reflexive": false,
+        "auxiliary_verb": "avere",
+        "prepositions_used": []
+      },
+      "tags": [
+        "common",
+        "actions",
+        "a1_level"
+      ]
+    },
+    {
+      "infinitive": "finire",
+      "infinitive_english": "to finish",
+      "verb_type": "regular (isc)",
+      "conjugation_group": "-ire (isc)",
+      "difficulty_level": "beginner",
+      "tenses": {
+        "presente": {
+          "forms": {
+            "io": {
+              "form": "finisco",
+              "english": "I finish"
+            },
+            "tu": {
+              "form": "finisci",
+              "english": "you finish"
+            },
+            "lui": {
+              "form": "finisce",
+              "english": "he finishes"
+            },
+            "lei": {
+              "form": "finisce",
+              "english": "she finishes"
+            },
+            "Lei": {
+              "form": "finisce",
+              "english": "you finish (formal)"
+            },
+            "noi": {
+              "form": "finiamo",
+              "english": "we finish"
+            },
+            "voi": {
+              "form": "finite",
+              "english": "you all finish"
+            },
+            "loro": {
+              "form": "finiscono",
+              "english": "they finish"
+            }
+          }
+        },
+        "passato_prossimo": {
+          "forms": {
+            "io": {
+              "form": "ho finito",
+              "english": "I finished/have finished"
+            },
+            "tu": {
+              "form": "hai finito",
+              "english": "you finished/have finished"
+            },
+            "lui": {
+              "form": "ha finito",
+              "english": "he finished/has finished"
+            },
+            "lei": {
+              "form": "ha finito",
+              "english": "she finished/has finished"
+            },
+            "Lei": {
+              "form": "ha finito",
+              "english": "you finished/have finished (formal)"
+            },
+            "noi": {
+              "form": "abbiamo finito",
+              "english": "we finished/have finished"
+            },
+            "voi": {
+              "form": "avete finito",
+              "english": "you all finished/have finished"
+            },
+            "loro": {
+              "form": "hanno finito",
+              "english": "they finished/have finished"
+            }
+          }
+        },
+        "futuro_semplice": {
+          "forms": {
+            "io": {
+              "form": "finirò",
+              "english": "I will finish"
+            },
+            "tu": {
+              "form": "finirai",
+              "english": "you will finish"
+            },
+            "lui": {
+              "form": "finirà",
+              "english": "he will finish"
+            },
+            "lei": {
+              "form": "finirà",
+              "english": "she will finish"
+            },
+            "Lei": {
+              "form": "finirà",
+              "english": "you will finish (formal)"
+            },
+            "noi": {
+              "form": "finiremo",
+              "english": "we will finish"
+            },
+            "voi": {
+              "form": "finirete",
+              "english": "you all will finish"
+            },
+            "loro": {
+              "form": "finiranno",
+              "english": "they will finish"
+            }
+          }
+        }
+      },
+      "characteristics": {
+        "transitive": true,
+        "reflexive": false,
+        "auxiliary_verb": "avere",
+        "prepositions_used": [
+          "di"
+        ]
+      },
+      "tags": [
+        "common",
+        "isc_verb",
+        "a1_level"
+      ]
+    },
+    {
+      "infinitive": "lavorare",
+      "infinitive_english": "to work",
+      "verb_type": "regular",
+      "conjugation_group": "-are",
+      "difficulty_level": "beginner",
+      "tenses": {
+        "presente": {
+          "forms": {
+            "io": {
+              "form": "lavoro",
+              "english": "I work"
+            },
+            "tu": {
+              "form": "lavori",
+              "english": "you work"
+            },
+            "lui": {
+              "form": "lavora",
+              "english": "he works"
+            },
+            "lei": {
+              "form": "lavora",
+              "english": "she works"
+            },
+            "Lei": {
+              "form": "lavora",
+              "english": "you work (formal)"
+            },
+            "noi": {
+              "form": "lavoriamo",
+              "english": "we work"
+            },
+            "voi": {
+              "form": "lavorate",
+              "english": "you all work"
+            },
+            "loro": {
+              "form": "lavorano",
+              "english": "they work"
+            }
+          }
+        },
+        "passato_prossimo": {
+          "forms": {
+            "io": {
+              "form": "ho lavorato",
+              "english": "I worked/have worked"
+            },
+            "tu": {
+              "form": "hai lavorato",
+              "english": "you worked/have worked"
+            },
+            "lui": {
+              "form": "ha lavorato",
+              "english": "he worked/has worked"
+            },
+            "lei": {
+              "form": "ha lavorato",
+              "english": "she worked/has worked"
+            },
+            "Lei": {
+              "form": "ha lavorato",
+              "english": "you worked/have worked (formal)"
+            },
+            "noi": {
+              "form": "abbiamo lavorato",
+              "english": "we worked/have worked"
+            },
+            "voi": {
+              "form": "avete lavorato",
+              "english": "you all worked/have worked"
+            },
+            "loro": {
+              "form": "hanno lavorato",
+              "english": "they worked/have worked"
+            }
+          }
+        },
+        "futuro_semplice": {
+          "forms": {
+            "io": {
+              "form": "lavorerò",
+              "english": "I will work"
+            },
+            "tu": {
+              "form": "lavorerai",
+              "english": "you will work"
+            },
+            "lui": {
+              "form": "lavorerà",
+              "english": "he will work"
+            },
+            "lei": {
+              "form": "lavorerà",
+              "english": "she will work"
+            },
+            "Lei": {
+              "form": "lavorerà",
+              "english": "you will work (formal)"
+            },
+            "noi": {
+              "form": "lavoreremo",
+              "english": "we will work"
+            },
+            "voi": {
+              "form": "lavorerete",
+              "english": "you all will work"
+            },
+            "loro": {
+              "form": "lavoreranno",
+              "english": "they will work"
+            }
+          }
+        }
+      },
+      "characteristics": {
+        "transitive": false,
+        "reflexive": false,
+        "auxiliary_verb": "avere",
+        "prepositions_used": [
+          "a",
+          "con"
+        ]
+      },
+      "tags": [
+        "common",
+        "work",
+        "a1_level"
+      ]
+    },
+    {
+      "infinitive": "vivere",
+      "infinitive_english": "to live",
+      "verb_type": "irregular",
+      "conjugation_group": "-ere",
+      "difficulty_level": "beginner",
+      "tenses": {
+        "presente": {
+          "forms": {
+            "io": {
+              "form": "vivo",
+              "english": "I live"
+            },
+            "tu": {
+              "form": "vivi",
+              "english": "you live"
+            },
+            "lui": {
+              "form": "vive",
+              "english": "he lives"
+            },
+            "lei": {
+              "form": "vive",
+              "english": "she lives"
+            },
+            "Lei": {
+              "form": "vive",
+              "english": "you live (formal)"
+            },
+            "noi": {
+              "form": "viviamo",
+              "english": "we live"
+            },
+            "voi": {
+              "form": "vivete",
+              "english": "you all live"
+            },
+            "loro": {
+              "form": "vivono",
+              "english": "they live"
+            }
+          }
+        },
+        "passato_prossimo": {
+          "forms": {
+            "io": {
+              "form": "ho vissuto",
+              "english": "I lived/have lived"
+            },
+            "tu": {
+              "form": "hai vissuto",
+              "english": "you lived/have lived"
+            },
+            "lui": {
+              "form": "ha vissuto",
+              "english": "he lived/has lived"
+            },
+            "lei": {
+              "form": "ha vissuto",
+              "english": "she lived/has lived"
+            },
+            "Lei": {
+              "form": "ha vissuto",
+              "english": "you lived/have lived (formal)"
+            },
+            "noi": {
+              "form": "abbiamo vissuto",
+              "english": "we lived/have lived"
+            },
+            "voi": {
+              "form": "avete vissuto",
+              "english": "you all lived/have lived"
+            },
+            "loro": {
+              "form": "hanno vissuto",
+              "english": "they lived/have lived"
+            }
+          }
+        },
+        "futuro_semplice": {
+          "forms": {
+            "io": {
+              "form": "vivrò",
+              "english": "I will live"
+            },
+            "tu": {
+              "form": "vivrai",
+              "english": "you will live"
+            },
+            "lui": {
+              "form": "vivrà",
+              "english": "he will live"
+            },
+            "lei": {
+              "form": "vivrà",
+              "english": "she will live"
+            },
+            "Lei": {
+              "form": "vivrà",
+              "english": "you will live (formal)"
+            },
+            "noi": {
+              "form": "vivremo",
+              "english": "we will live"
+            },
+            "voi": {
+              "form": "vivrete",
+              "english": "you all will live"
+            },
+            "loro": {
+              "form": "vivranno",
+              "english": "they will live"
+            }
+          }
+        }
+      },
+      "characteristics": {
+        "transitive": false,
+        "reflexive": false,
+        "auxiliary_verb": "avere",
+        "prepositions_used": [
+          "a",
+          "in"
+        ]
+      },
+      "tags": [
+        "common",
+        "life",
+        "a1_level"
+      ]
+    },
+    {
+      "infinitive": "entrare",
+      "infinitive_english": [
+        "to enter",
+        "to come in"
+      ],
+      "verb_type": "regular",
+      "conjugation_group": "-are",
+      "difficulty_level": "beginner",
+      "tenses": {
+        "presente": {
+          "forms": {
+            "io": {
+              "form": "entro",
+              "english": [
+                "I enter",
+                "I come in"
+              ]
+            },
+            "tu": {
+              "form": "entri",
+              "english": [
+                "you enter",
+                "you come in"
+              ]
+            },
+            "lui": {
+              "form": "entra",
+              "english": [
+                "he enters",
+                "he comes in"
+              ]
+            },
+            "lei": {
+              "form": "entra",
+              "english": [
+                "she enters",
+                "she comes in"
+              ]
+            },
+            "Lei": {
+              "form": "entra",
+              "english": [
+                "you enter",
+                "you come in"
+              ]
+            },
+            "noi": {
+              "form": "entriamo",
+              "english": [
+                "we enter",
+                "we come in"
+              ]
+            },
+            "voi": {
+              "form": "entrate",
+              "english": [
+                "you all enter",
+                "you all come in"
+              ]
+            },
+            "loro": {
+              "form": "entrano",
+              "english": [
+                "they enter",
+                "they come in"
+              ]
+            }
+          }
+        },
+        "passato_prossimo": {
+          "forms": {
+            "io": {
+              "form_masculine": "sono entrato",
+              "form_feminine": "sono entrata",
+              "english": "I entered/have entered"
+            },
+            "tu": {
+              "form_masculine": "sei entrato",
+              "form_feminine": "sei entrata",
+              "english": "you entered/have entered"
+            },
+            "lui": {
+              "form": "è entrato",
+              "english": "he entered/has entered"
+            },
+            "lei": {
+              "form": "è entrata",
+              "english": "she entered/has entered"
+            },
+            "Lei": {
+              "form_masculine": "è entrato",
+              "form_feminine": "è entrata",
+              "english": "you entered/have entered (formal)"
+            },
+            "noi": {
+              "form_masculine": "siamo entrati",
+              "form_feminine": "siamo entrate",
+              "form_mixed": "siamo entrati",
+              "english": "we entered/have entered"
+            },
+            "voi": {
+              "form_masculine": "siete entrati",
+              "form_feminine": "siete entrate",
+              "form_mixed": "siete entrati",
+              "english": "you all entered/have entered"
+            },
+            "loro": {
+              "form_masculine": "sono entrati",
+              "form_feminine": "sono entrate",
+              "form_mixed": "sono entrati",
+              "english": "they entered/have entered"
+            }
+          }
+        },
+        "futuro_semplice": {
+          "forms": {
+            "io": {
+              "form": "entrerò",
+              "english": [
+                "I will enter",
+                "I will come in"
+              ]
+            },
+            "tu": {
+              "form": "entrerai",
+              "english": [
+                "you will enter",
+                "you will come in"
+              ]
+            },
+            "lui": {
+              "form": "entrerà",
+              "english": [
+                "he will enter",
+                "he will come in"
+              ]
+            },
+            "lei": {
+              "form": "entrerà",
+              "english": [
+                "she will enter",
+                "she will come in"
+              ]
+            },
+            "Lei": {
+              "form": "entrerà",
+              "english": [
+                "you will enter",
+                "you will come in"
+              ]
+            },
+            "noi": {
+              "form": "entreremo",
+              "english": [
+                "we will enter",
+                "we will come in"
+              ]
+            },
+            "voi": {
+              "form": "entrerete",
+              "english": [
+                "you all will enter",
+                "you all will come in"
+              ]
+            },
+            "loro": {
+              "form": "entreranno",
+              "english": [
+                "they will enter",
+                "they will come in"
+              ]
+            }
+          }
+        }
+      },
+      "characteristics": {
+        "transitive": false,
+        "reflexive": false,
+        "auxiliary_verb": "essere",
+        "prepositions_used": [
+          "in",
+          "a",
+          "da"
+        ]
+      },
+      "tags": [
+        "movement",
+        "common",
+        "a1_level"
+      ]
+    },
+    {
+      "infinitive": "aspettare",
+      "infinitive_english": "to wait for",
+      "verb_type": "regular",
+      "conjugation_group": "-are",
+      "difficulty_level": "beginner",
+      "tenses": {
+        "presente": {
+          "forms": {
+            "io": {
+              "form": "aspetto",
+              "english": "I wait for"
+            },
+            "tu": {
+              "form": "aspetti",
+              "english": "you wait for"
+            },
+            "lui": {
+              "form": "aspetta",
+              "english": "he waits for"
+            },
+            "lei": {
+              "form": "aspetta",
+              "english": "she waits for"
+            },
+            "Lei": {
+              "form": "aspetta",
+              "english": "you wait for (formal)"
+            },
+            "noi": {
+              "form": "aspettiamo",
+              "english": "we wait for"
+            },
+            "voi": {
+              "form": "aspettate",
+              "english": "you all wait for"
+            },
+            "loro": {
+              "form": "aspettano",
+              "english": "they wait for"
+            }
+          }
+        },
+        "passato_prossimo": {
+          "forms": {
+            "io": {
+              "form": "ho aspettato",
+              "english": "I waited for/have waited for"
+            },
+            "tu": {
+              "form": "hai aspettato",
+              "english": "you waited for/have waited for"
+            },
+            "lui": {
+              "form": "ha aspettato",
+              "english": "he waited for/has waited for"
+            },
+            "lei": {
+              "form": "ha aspettato",
+              "english": "she waited for/has waited for"
+            },
+            "Lei": {
+              "form": "ha aspettato",
+              "english": "you waited for/have waited for (formal)"
+            },
+            "noi": {
+              "form": "abbiamo aspettato",
+              "english": "we waited for/have waited for"
+            },
+            "voi": {
+              "form": "avete aspettato",
+              "english": "you all waited for/have waited for"
+            },
+            "loro": {
+              "form": "hanno aspettato",
+              "english": "they waited for/have waited for"
+            }
+          }
+        },
+        "futuro_semplice": {
+          "forms": {
+            "io": {
+              "form": "aspetterò",
+              "english": "I will wait for"
+            },
+            "tu": {
+              "form": "aspetterai",
+              "english": "you will wait for"
+            },
+            "lui": {
+              "form": "aspetterà",
+              "english": "he will wait for"
+            },
+            "lei": {
+              "form": "aspetterà",
+              "english": "she will wait for"
+            },
+            "Lei": {
+              "form": "aspetterà",
+              "english": "you will wait for (formal)"
+            },
+            "noi": {
+              "form": "aspetteremo",
+              "english": "we will wait for"
+            },
+            "voi": {
+              "form": "aspetterete",
+              "english": "you all will wait for"
+            },
+            "loro": {
+              "form": "aspetteranno",
+              "english": "they will wait for"
+            }
+          }
+        }
+      },
+      "characteristics": {
+        "transitive": true,
+        "reflexive": false,
+        "auxiliary_verb": "avere",
+        "prepositions_used": []
+      },
+      "tags": [
+        "common",
+        "time",
+        "a1_level"
+      ]
+    },
+    {
+      "infinitive": "cercare",
+      "infinitive_english": "to look for, to search",
+      "verb_type": "regular",
+      "conjugation_group": "-are",
+      "difficulty_level": "beginner",
+      "tenses": {
+        "presente": {
+          "forms": {
+            "io": {
+              "form": "cerco",
+              "english": "I look for"
+            },
+            "tu": {
+              "form": "cerchi",
+              "english": "you look for"
+            },
+            "lui": {
+              "form": "cerca",
+              "english": "he looks for"
+            },
+            "lei": {
+              "form": "cerca",
+              "english": "she looks for"
+            },
+            "Lei": {
+              "form": "cerca",
+              "english": "you look for (formal)"
+            },
+            "noi": {
+              "form": "cerchiamo",
+              "english": "we look for"
+            },
+            "voi": {
+              "form": "cercate",
+              "english": "you all look for"
+            },
+            "loro": {
+              "form": "cercano",
+              "english": "they look for"
+            }
+          }
+        },
+        "passato_prossimo": {
+          "forms": {
+            "io": {
+              "form": "ho cercato",
+              "english": "I looked for/have looked for"
+            },
+            "tu": {
+              "form": "hai cercato",
+              "english": "you looked for/have looked for"
+            },
+            "lui": {
+              "form": "ha cercato",
+              "english": "he looked for/has looked for"
+            },
+            "lei": {
+              "form": "ha cercato",
+              "english": "she looked for/has looked for"
+            },
+            "Lei": {
+              "form": "ha cercato",
+              "english": "you looked for/have looked for (formal)"
+            },
+            "noi": {
+              "form": "abbiamo cercato",
+              "english": "we looked for/have looked for"
+            },
+            "voi": {
+              "form": "avete cercato",
+              "english": "you all looked for/have looked for"
+            },
+            "loro": {
+              "form": "hanno cercato",
+              "english": "they looked for/have looked for"
+            }
+          }
+        },
+        "futuro_semplice": {
+          "forms": {
+            "io": {
+              "form": "cercherò",
+              "english": "I will look for"
+            },
+            "tu": {
+              "form": "cercherai",
+              "english": "you will look for"
+            },
+            "lui": {
+              "form": "cercherà",
+              "english": "he will look for"
+            },
+            "lei": {
+              "form": "cercherà",
+              "english": "she will look for"
+            },
+            "Lei": {
+              "form": "cercherà",
+              "english": "you will look for (formal)"
+            },
+            "noi": {
+              "form": "cercheremo",
+              "english": "we will look for"
+            },
+            "voi": {
+              "form": "cercherete",
+              "english": "you all will look for"
+            },
+            "loro": {
+              "form": "cercheranno",
+              "english": "they will look for"
+            }
+          }
+        }
+      },
+      "characteristics": {
+        "transitive": true,
+        "reflexive": false,
+        "auxiliary_verb": "avere",
+        "prepositions_used": [
+          "di"
+        ]
+      },
+      "tags": [
+        "common",
+        "actions",
+        "a1_level"
+      ]
+    },
+    {
+      "infinitive": "sapere",
+      "infinitive_english": "to know (a fact)",
+      "verb_type": "irregular",
+      "conjugation_group": "irregular",
+      "difficulty_level": "intermediate",
+      "tenses": {
+        "presente": {
+          "forms": {
+            "io": {
+              "form": "so",
+              "english": "I know"
+            },
+            "tu": {
+              "form": "sai",
+              "english": "you know"
+            },
+            "lui": {
+              "form": "sa",
+              "english": "he knows"
+            },
+            "lei": {
+              "form": "sa",
+              "english": "she knows"
+            },
+            "Lei": {
+              "form": "sa",
+              "english": "you know (formal)"
+            },
+            "noi": {
+              "form": "sappiamo",
+              "english": "we know"
+            },
+            "voi": {
+              "form": "sapete",
+              "english": "you all know"
+            },
+            "loro": {
+              "form": "sanno",
+              "english": "they know"
+            }
+          }
+        },
+        "passato_prossimo": {
+          "forms": {
+            "io": {
+              "form": "ho saputo",
+              "english": "I learned/found out"
+            },
+            "tu": {
+              "form": "hai saputo",
+              "english": "you learned/found out"
+            },
+            "lui": {
+              "form": "ha saputo",
+              "english": "he learned/found out"
+            },
+            "lei": {
+              "form": "ha saputo",
+              "english": "she learned/found out"
+            },
+            "Lei": {
+              "form": "ha saputo",
+              "english": "you learned/found out (formal)"
+            },
+            "noi": {
+              "form": "abbiamo saputo",
+              "english": "we learned/found out"
+            },
+            "voi": {
+              "form": "avete saputo",
+              "english": "you all learned/found out"
+            },
+            "loro": {
+              "form": "hanno saputo",
+              "english": "they learned/found out"
+            }
+          }
+        },
+        "futuro_semplice": {
+          "forms": {
+            "io": {
+              "form": "saprò",
+              "english": "I will know"
+            },
+            "tu": {
+              "form": "saprai",
+              "english": "you will know"
+            },
+            "lui": {
+              "form": "saprà",
+              "english": "he will know"
+            },
+            "lei": {
+              "form": "saprà",
+              "english": "she will know"
+            },
+            "Lei": {
+              "form": "saprà",
+              "english": "you will know (formal)"
+            },
+            "noi": {
+              "form": "sapremo",
+              "english": "we will know"
+            },
+            "voi": {
+              "form": "saprete",
+              "english": "you all will know"
+            },
+            "loro": {
+              "form": "sapranno",
+              "english": "they will know"
+            }
+          }
+        }
+      },
+      "characteristics": {
+        "transitive": true,
+        "reflexive": false,
+        "auxiliary_verb": "avere",
+        "prepositions_used": []
+      },
+      "tags": [
+        "common",
+        "irregular",
+        "a2_level"
+      ]
+    },
+    {
+      "infinitive": "conoscere",
+      "infinitive_english": "to know (a person/place)",
+      "verb_type": "regular",
+      "conjugation_group": "-ere",
+      "difficulty_level": "beginner",
+      "tenses": {
+        "presente": {
+          "forms": {
+            "io": {
+              "form": "conosco",
+              "english": "I know"
+            },
+            "tu": {
+              "form": "conosci",
+              "english": "you know"
+            },
+            "lui": {
+              "form": "conosce",
+              "english": "he knows"
+            },
+            "lei": {
+              "form": "conosce",
+              "english": "she knows"
+            },
+            "Lei": {
+              "form": "conosce",
+              "english": "you know (formal)"
+            },
+            "noi": {
+              "form": "conosciamo",
+              "english": "we know"
+            },
+            "voi": {
+              "form": "conoscete",
+              "english": "you all know"
+            },
+            "loro": {
+              "form": "conoscono",
+              "english": "they know"
+            }
+          }
+        },
+        "passato_prossimo": {
+          "forms": {
+            "io": {
+              "form": "ho conosciuto",
+              "english": "I met/have known"
+            },
+            "tu": {
+              "form": "hai conosciuto",
+              "english": "you met/have known"
+            },
+            "lui": {
+              "form": "ha conosciuto",
+              "english": "he met/has known"
+            },
+            "lei": {
+              "form": "ha conosciuto",
+              "english": "she met/has known"
+            },
+            "Lei": {
+              "form": "ha conosciuto",
+              "english": "you met/have known (formal)"
+            },
+            "noi": {
+              "form": "abbiamo conosciuto",
+              "english": "we met/have known"
+            },
+            "voi": {
+              "form": "avete conosciuto",
+              "english": "you all met/have known"
+            },
+            "loro": {
+              "form": "hanno conosciuto",
+              "english": "they met/have known"
+            }
+          }
+        },
+        "futuro_semplice": {
+          "forms": {
+            "io": {
+              "form": "conoscerò",
+              "english": "I will know/meet"
+            },
+            "tu": {
+              "form": "conoscerai",
+              "english": "you will know/meet"
+            },
+            "lui": {
+              "form": "conoscerà",
+              "english": "he will know/meet"
+            },
+            "lei": {
+              "form": "conoscerà",
+              "english": "she will know/meet"
+            },
+            "Lei": {
+              "form": "conoscerà",
+              "english": "you will know/meet (formal)"
+            },
+            "noi": {
+              "form": "conosceremo",
+              "english": "we will know/meet"
+            },
+            "voi": {
+              "form": "conoscerete",
+              "english": "you all will know/meet"
+            },
+            "loro": {
+              "form": "conosceranno",
+              "english": "they will know/meet"
+            }
+          }
+        }
+      },
+      "characteristics": {
+        "transitive": true,
+        "reflexive": false,
+        "auxiliary_verb": "avere",
+        "prepositions_used": []
+      },
+      "tags": [
+        "common",
+        "knowledge",
+        "a1_level"
+      ]
+    },
+    {
+      "infinitive": "preferire",
+      "infinitive_english": "to prefer",
+      "verb_type": "regular (isc)",
+      "conjugation_group": "-ire (isc)",
+      "difficulty_level": "beginner",
+      "tenses": {
+        "presente": {
+          "forms": {
+            "io": {
+              "form": "preferisco",
+              "english": "I prefer"
+            },
+            "tu": {
+              "form": "preferisci",
+              "english": "you prefer"
+            },
+            "lui": {
+              "form": "preferisce",
+              "english": "he prefers"
+            },
+            "lei": {
+              "form": "preferisce",
+              "english": "she prefers"
+            },
+            "Lei": {
+              "form": "preferisce",
+              "english": "you prefer (formal)"
+            },
+            "noi": {
+              "form": "preferiamo",
+              "english": "we prefer"
+            },
+            "voi": {
+              "form": "preferite",
+              "english": "you all prefer"
+            },
+            "loro": {
+              "form": "preferiscono",
+              "english": "they prefer"
+            }
+          }
+        },
+        "passato_prossimo": {
+          "forms": {
+            "io": {
+              "form": "ho preferito",
+              "english": "I preferred/have preferred"
+            },
+            "tu": {
+              "form": "hai preferito",
+              "english": "you preferred/have preferred"
+            },
+            "lui": {
+              "form": "ha preferito",
+              "english": "he preferred/has preferred"
+            },
+            "lei": {
+              "form": "ha preferito",
+              "english": "she preferred/has preferred"
+            },
+            "Lei": {
+              "form": "ha preferito",
+              "english": "you preferred/have preferred (formal)"
+            },
+            "noi": {
+              "form": "abbiamo preferito",
+              "english": "we preferred/have preferred"
+            },
+            "voi": {
+              "form": "avete preferito",
+              "english": "you all preferred/have preferred"
+            },
+            "loro": {
+              "form": "hanno preferito",
+              "english": "they preferred/have preferred"
+            }
+          }
+        },
+        "futuro_semplice": {
+          "forms": {
+            "io": {
+              "form": "preferirò",
+              "english": "I will prefer"
+            },
+            "tu": {
+              "form": "preferirai",
+              "english": "you will prefer"
+            },
+            "lui": {
+              "form": "preferirà",
+              "english": "he will prefer"
+            },
+            "lei": {
+              "form": "preferirà",
+              "english": "she will prefer"
+            },
+            "Lei": {
+              "form": "preferirà",
+              "english": "you will prefer (formal)"
+            },
+            "noi": {
+              "form": "preferiremo",
+              "english": "we will prefer"
+            },
+            "voi": {
+              "form": "preferirete",
+              "english": "you all will prefer"
+            },
+            "loro": {
+              "form": "preferiranno",
+              "english": "they will prefer"
+            }
+          }
+        }
+      },
+      "characteristics": {
+        "transitive": true,
+        "reflexive": false,
+        "auxiliary_verb": "avere",
+        "prepositions_used": [
+          "a",
+          "di"
+        ]
+      },
+      "tags": [
+        "common",
+        "isc_verb",
+        "a1_level"
+      ]
+    },
+    {
+      "infinitive": "camminare",
+      "infinitive_english": "to walk",
+      "verb_type": "regular",
+      "conjugation_group": "-are",
+      "difficulty_level": "beginner",
+      "tenses": {
+        "presente": {
+          "forms": {
+            "io": {
+              "form": "cammino",
+              "english": "I walk"
+            },
+            "tu": {
+              "form": "cammini",
+              "english": "you walk"
+            },
+            "lui": {
+              "form": "cammina",
+              "english": "he walks"
+            },
+            "lei": {
+              "form": "cammina",
+              "english": "she walks"
+            },
+            "Lei": {
+              "form": "cammina",
+              "english": "you walk (formal)"
+            },
+            "noi": {
+              "form": "camminiamo",
+              "english": "we walk"
+            },
+            "voi": {
+              "form": "camminate",
+              "english": "you all walk"
+            },
+            "loro": {
+              "form": "camminano",
+              "english": "they walk"
+            }
+          }
+        },
+        "passato_prossimo": {
+          "forms": {
+            "io": {
+              "form": "ho camminato",
+              "english": "I walked"
+            },
+            "tu": {
+              "form": "hai camminato",
+              "english": "you walked"
+            },
+            "lui": {
+              "form": "ha camminato",
+              "english": "he walked"
+            },
+            "lei": {
+              "form": "ha camminato",
+              "english": "she walked"
+            },
+            "Lei": {
+              "form": "ha camminato",
+              "english": "you walked (formal)"
+            },
+            "noi": {
+              "form": "abbiamo camminato",
+              "english": "we walked"
+            },
+            "voi": {
+              "form": "avete camminato",
+              "english": "you all walked"
+            },
+            "loro": {
+              "form": "hanno camminato",
+              "english": "they walked"
+            }
+          }
+        },
+        "futuro_semplice": {
+          "forms": {
+            "io": {
+              "form": "camminerò",
+              "english": "I will walk"
+            },
+            "tu": {
+              "form": "camminerai",
+              "english": "you will walk"
+            },
+            "lui": {
+              "form": "camminerà",
+              "english": "he will walk"
+            },
+            "lei": {
+              "form": "camminerà",
+              "english": "she will walk"
+            },
+            "Lei": {
+              "form": "camminerà",
+              "english": "you will walk (formal)"
+            },
+            "noi": {
+              "form": "cammineremo",
+              "english": "we will walk"
+            },
+            "voi": {
+              "form": "camminerete",
+              "english": "you all will walk"
+            },
+            "loro": {
+              "form": "cammineranno",
+              "english": "they will walk"
+            }
+          }
+        }
+      },
+      "characteristics": {
+        "transitive": false,
+        "reflexive": false,
+        "auxiliary_verb": "avere",
+        "prepositions_used": []
+      },
+      "tags": [
+        "movement",
+        "common",
+        "a1_level"
+      ]
+    },
+    {
+      "infinitive": "nuotare",
+      "infinitive_english": "to swim",
+      "verb_type": "regular",
+      "conjugation_group": "-are",
+      "difficulty_level": "beginner",
+      "tenses": {
+        "presente": {
+          "forms": {
+            "io": {
+              "form": "nuoto",
+              "english": "I swim"
+            },
+            "tu": {
+              "form": "nuoti",
+              "english": "you swim"
+            },
+            "lui": {
+              "form": "nuota",
+              "english": "he swims"
+            },
+            "lei": {
+              "form": "nuota",
+              "english": "she swims"
+            },
+            "Lei": {
+              "form": "nuota",
+              "english": "you swim (formal)"
+            },
+            "noi": {
+              "form": "nuotiamo",
+              "english": "we swim"
+            },
+            "voi": {
+              "form": "nuotate",
+              "english": "you all swim"
+            },
+            "loro": {
+              "form": "nuotano",
+              "english": "they swim"
+            }
+          }
+        },
+        "passato_prossimo": {
+          "forms": {
+            "io": {
+              "form": "ho nuotato",
+              "english": "I swam"
+            },
+            "tu": {
+              "form": "hai nuotato",
+              "english": "you swam"
+            },
+            "lui": {
+              "form": "ha nuotato",
+              "english": "he swam"
+            },
+            "lei": {
+              "form": "ha nuotato",
+              "english": "she swam"
+            },
+            "Lei": {
+              "form": "ha nuotato",
+              "english": "you swam (formal)"
+            },
+            "noi": {
+              "form": "abbiamo nuotato",
+              "english": "we swam"
+            },
+            "voi": {
+              "form": "avete nuotato",
+              "english": "you all swam"
+            },
+            "loro": {
+              "form": "hanno nuotato",
+              "english": "they swam"
+            }
+          }
+        },
+        "futuro_semplice": {
+          "forms": {
+            "io": {
+              "form": "nuoterò",
+              "english": "I will swim"
+            },
+            "tu": {
+              "form": "nuoterai",
+              "english": "you will swim"
+            },
+            "lui": {
+              "form": "nuoterà",
+              "english": "he will swim"
+            },
+            "lei": {
+              "form": "nuoterà",
+              "english": "she will swim"
+            },
+            "Lei": {
+              "form": "nuoterà",
+              "english": "you will swim (formal)"
+            },
+            "noi": {
+              "form": "nuoteremo",
+              "english": "we will swim"
+            },
+            "voi": {
+              "form": "nuoterete",
+              "english": "you all will swim"
+            },
+            "loro": {
+              "form": "nuoteranno",
+              "english": "they will swim"
+            }
+          }
+        }
+      },
+      "characteristics": {
+        "transitive": false,
+        "reflexive": false,
+        "auxiliary_verb": "avere",
+        "prepositions_used": []
+      },
+      "tags": [
+        "sports",
+        "movement",
+        "a1_level"
+      ]
+    },
+    {
+      "infinitive": "ascoltare",
+      "infinitive_english": "to listen",
+      "verb_type": "regular",
+      "conjugation_group": "-are",
+      "difficulty_level": "beginner",
+      "tenses": {
+        "presente": {
+          "forms": {
+            "io": {
+              "form": "ascolto",
+              "english": "I listen"
+            },
+            "tu": {
+              "form": "ascolti",
+              "english": "you listen"
+            },
+            "lui": {
+              "form": "ascolta",
+              "english": "he listens"
+            },
+            "lei": {
+              "form": "ascolta",
+              "english": "she listens"
+            },
+            "Lei": {
+              "form": "ascolta",
+              "english": "you listen (formal)"
+            },
+            "noi": {
+              "form": "ascoltiamo",
+              "english": "we listen"
+            },
+            "voi": {
+              "form": "ascoltate",
+              "english": "you all listen"
+            },
+            "loro": {
+              "form": "ascoltano",
+              "english": "they listen"
+            }
+          }
+        },
+        "passato_prossimo": {
+          "forms": {
+            "io": {
+              "form": "ho ascoltato",
+              "english": "I listened"
+            },
+            "tu": {
+              "form": "hai ascoltato",
+              "english": "you listened"
+            },
+            "lui": {
+              "form": "ha ascoltato",
+              "english": "he listened"
+            },
+            "lei": {
+              "form": "ha ascoltato",
+              "english": "she listened"
+            },
+            "Lei": {
+              "form": "ha ascoltato",
+              "english": "you listened (formal)"
+            },
+            "noi": {
+              "form": "abbiamo ascoltato",
+              "english": "we listened"
+            },
+            "voi": {
+              "form": "avete ascoltato",
+              "english": "you all listened"
+            },
+            "loro": {
+              "form": "hanno ascoltato",
+              "english": "they listened"
+            }
+          }
+        },
+        "futuro_semplice": {
+          "forms": {
+            "io": {
+              "form": "ascolterò",
+              "english": "I will listen"
+            },
+            "tu": {
+              "form": "ascolterai",
+              "english": "you will listen"
+            },
+            "lui": {
+              "form": "ascolterà",
+              "english": "he will listen"
+            },
+            "lei": {
+              "form": "ascolterà",
+              "english": "she will listen"
+            },
+            "Lei": {
+              "form": "ascolterà",
+              "english": "you will listen (formal)"
+            },
+            "noi": {
+              "form": "ascolteremo",
+              "english": "we will listen"
+            },
+            "voi": {
+              "form": "ascolterete",
+              "english": "you all will listen"
+            },
+            "loro": {
+              "form": "ascolteranno",
+              "english": "they will listen"
+            }
+          }
+        }
+      },
+      "characteristics": {
+        "transitive": true,
+        "reflexive": false,
+        "auxiliary_verb": "avere",
+        "prepositions_used": [
+          "a"
+        ]
+      },
+      "tags": [
+        "communication",
+        "common",
+        "a1_level"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Italian Verb Conjugation Drill</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Add these animations */
+        .shake-animation {
+            animation: shake 0.6s ease-in-out;
+        }
+
+        @keyframes shake {
+
+            0%,
+            100% {
+                transform: translateX(0);
+            }
+
+            25% {
+                transform: translateX(-8px);
+            }
+
+            75% {
+                transform: translateX(8px);
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 min-h-screen flex flex-col items-center py-8">
+    <div class="container max-w-2xl mx-auto px-4">
+        <h1 class="text-3xl font-bold text-center text-blue-700 mb-2">Italian Verb Conjugation Drill</h1>
+        <p class="text-center text-gray-600 mb-8">Practice your Italian verb conjugations with this timed quiz!</p>
+
+        <!-- Game Selection Screen -->
+        <div id="game-selection-screen" class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-xl font-semibold mb-4">Select Game Mode</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <button id="multiple-choice-btn"
+                    class="bg-blue-600 text-white py-4 px-6 rounded-md hover:bg-blue-700 transition duration-200 text-lg font-semibold">
+                    Multiple Choice
+                </button>
+                <button id="typing-game-btn"
+                    class="bg-green-600 text-white py-4 px-6 rounded-md hover:bg-green-700 transition duration-200 text-lg font-semibold">
+                    Typing Challenge
+                </button>
+            </div>
+            <p class="text-center text-gray-600 mt-4">Choose your preferred way to practice Italian verbs</p>
+        </div>
+
+        <!-- File Upload Screen -->
+        <div id="upload-screen" class="hidden bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-xl font-semibold mb-4">Load Verbs Data</h2>
+            <p class="text-gray-600 mb-4">Please upload your <code>verbs.json</code> file to begin:</p>
+
+            <div class="mb-4">
+                <input type="file" id="json-file" accept=".json"
+                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+
+            <button id="load-file"
+                class="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition duration-200">
+                Load Verbs Data
+            </button>
+
+            <div id="file-status" class="mt-4 text-sm hidden"></div>
+        </div>
+
+        <!-- Multiple Choice Setup Screen -->
+        <div id="multiple-choice-setup" class="hidden bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-xl font-semibold mb-4">Multiple Choice Quiz Setup</h2>
+
+            <div class="mb-4">
+                <label for="question-count" class="block text-gray-700 mb-2">Number of questions:</label>
+                <input type="number" id="question-count" min="10" max="50" value="10"
+                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+
+            <div class="mb-6">
+                <label class="block text-gray-700 mb-2">Tenses to include:</label>
+                <div class="flex flex-wrap gap-2">
+                    <label class="inline-flex items-center">
+                        <input type="checkbox" class="tense-checkbox" value="presente" checked>
+                        <span class="ml-2">Presente</span>
+                    </label>
+                    <label class="inline-flex items-center">
+                        <input type="checkbox" class="tense-checkbox" value="passato_prossimo" checked>
+                        <span class="ml-2">Passato Prossimo</span>
+                    </label>
+                    <label class="inline-flex items-center">
+                        <input type="checkbox" class="tense-checkbox" value="futuro_semplice" checked>
+                        <span class="ml-2">Futuro Semplice</span>
+                    </label>
+                    <label class="inline-flex items-center">
+                        <input type="checkbox" class="tense-checkbox" value="infinitive" checked>
+                        <span class="ml-2">Infinitive</span>
+                    </label>
+                </div>
+            </div>
+
+            <button id="start-multiple-choice"
+                class="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition duration-200">
+                Start Multiple Choice Quiz
+            </button>
+        </div>
+
+        <!-- Typing Game Setup Screen -->
+        <div id="typing-setup" class="hidden bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-xl font-semibold mb-4">Typing Challenge Setup</h2>
+
+            <div class="mb-4">
+                <label for="typing-question-count" class="block text-gray-700 mb-2">Number of questions (minimum
+                    10):</label>
+                <input type="number" id="typing-question-count" min="10" max="50" value="10"
+                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+
+            <div class="mb-6">
+                <label class="block text-gray-700 mb-2">Tenses to include:</label>
+                <div class="flex flex-wrap gap-2">
+                    <label class="inline-flex items-center">
+                        <input type="checkbox" class="typing-tense-checkbox" value="presente" checked>
+                        <span class="ml-2">Presente</span>
+                    </label>
+                    <label class="inline-flex items-center">
+                        <input type="checkbox" class="typing-tense-checkbox" value="passato_prossimo" checked>
+                        <span class="ml-2">Passato Prossimo</span>
+                    </label>
+                    <label class="inline-flex items-center">
+                        <input type="checkbox" class="typing-tense-checkbox" value="futuro_semplice" checked>
+                        <span class="ml-2">Futuro Semplice</span>
+                    </label>
+                    <label class="inline-flex items-center">
+                        <input type="checkbox" class="typing-tense-checkbox" value="infinitive" checked>
+                        <span class="ml-2">Infinitive</span>
+                    </label>
+                </div>
+            </div>
+
+            <button id="start-typing"
+                class="w-full bg-green-600 text-white py-2 px-4 rounded-md hover:bg-green-700 transition duration-200">
+                Start Typing Challenge
+            </button>
+        </div>
+
+        <!-- Multiple Choice Quiz Screen -->
+        <div id="multiple-choice-screen" class="hidden bg-white rounded-lg shadow-md p-6 mb-6">
+            <div class="flex justify-between items-center mb-6">
+                <div id="multiple-choice-timer" class="text-xl font-bold text-blue-700">Avg: 0.0s</div>
+                <div id="multiple-choice-progress" class="text-gray-600">Question 1 of <span
+                        id="multiple-choice-total-questions">0</span></div>
+            </div>
+
+            <div id="multiple-choice-question-container" class="mb-6">
+                <h2 class="text-2xl font-bold text-center mb-8" id="multiple-choice-question-text"></h2>
+
+                <div class="flex items-center justify-center mb-6">
+                    <button id="multiple-choice-speak-question" class="bg-gray-200 hover:bg-gray-300 p-3 rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div id="multiple-choice-options-container" class="space-y-3">
+                    <!-- Options will be populated here -->
+                </div>
+
+                <div class="mt-4 text-sm text-gray-600 text-center">
+                    Use keys <kbd class="px-2 py-1 bg-gray-200 rounded">1</kbd>-<kbd
+                        class="px-2 py-1 bg-gray-200 rounded">6</kbd> to select answers
+                </div>
+            </div>
+        </div>
+
+        <!-- Typing Game Screen -->
+        <div id="typing-screen" class="hidden bg-white rounded-lg shadow-md p-6 mb-6">
+            <div class="flex justify-between items-center mb-6">
+                <div id="typing-timer" class="text-xl font-bold text-green-700">Avg: 0.0s</div>
+                <div id="typing-progress" class="text-gray-600">Question 1 of <span id="typing-total-questions">0</span>
+                </div>
+            </div>
+
+            <div id="typing-question-container" class="mb-6">
+                <h2 class="text-2xl font-bold text-center mb-8" id="typing-question-text"></h2>
+
+                <div class="mb-6">
+                    <input type="text" id="typing-answer-input"
+                        class="w-full px-4 py-3 text-lg border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
+                        placeholder="Type the Italian translation...">
+                </div>
+
+                <!-- Special Characters Keyboard -->
+                <div class="mb-4">
+                    <div class="flex flex-wrap gap-2 justify-center">
+                        <button class="special-char-btn bg-gray-200 hover:bg-gray-300 px-3 py-2 rounded-md"
+                            data-char="à">à</button>
+                        <button class="special-char-btn bg-gray-200 hover:bg-gray-300 px-3 py-2 rounded-md"
+                            data-char="è">è</button>
+                        <button class="special-char-btn bg-gray-200 hover:bg-gray-300 px-3 py-2 rounded-md"
+                            data-char="é">é</button>
+                        <button class="special-char-btn bg-gray-200 hover:bg-gray-300 px-3 py-2 rounded-md"
+                            data-char="ì">ì</button>
+                        <button class="special-char-btn bg-gray-200 hover:bg-gray-300 px-3 py-2 rounded-md"
+                            data-char="ò">ò</button>
+                        <button class="special-char-btn bg-gray-200 hover:bg-gray-300 px-3 py-2 rounded-md"
+                            data-char="ù">ù</button>
+                        <button class="special-char-btn bg-gray-200 hover:bg-gray-300 px-3 py-2 rounded-md"
+                            data-char="'">'</button>
+                    </div>
+                </div>
+
+                <div class="text-sm text-gray-600 text-center">
+                    Press <kbd class="px-2 py-1 bg-gray-200 rounded">Enter</kbd> to submit your answer
+                </div>
+            </div>
+        </div>
+
+        <!-- Name Input Screen -->
+        <div id="name-screen" class="hidden bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold text-center mb-6" id="name-screen-title">Quiz Complete!</h2>
+
+            <div class="text-center mb-6">
+                <p class="text-lg">Your average response time: <span id="final-time"
+                        class="font-bold text-blue-700"></span></p>
+                <p class="text-sm text-gray-600 mt-2">Total questions: <span id="total-questions-completed"></span></p>
+                <p id="new-record" class="text-green-600 font-semibold mt-2 hidden">New personal best!</p>
+            </div>
+
+            <!-- Missed Questions Summary -->
+            <div id="missed-questions" class="hidden mb-6">
+                <h3 class="text-xl font-semibold mb-3 text-red-600">Missed Questions</h3>
+                <div id="missed-questions-list" class="space-y-2">
+                    <!-- Missed questions will be populated here -->
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <label for="user-name" class="block text-gray-700 mb-2">Enter your name for the leaderboard:</label>
+                <input type="text" id="user-name" maxlength="20"
+                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    placeholder="Your name">
+            </div>
+
+            <button id="save-score"
+                class="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition duration-200">
+                Save Score
+            </button>
+        </div>
+
+        <!-- Results Screen -->
+        <div id="results-screen" class="hidden bg-white rounded-lg shadow-md p-6">
+            <h2 class="text-2xl font-bold text-center mb-6" id="results-screen-title">Leaderboard</h2>
+
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold mb-3" id="leaderboard-title">Top Scores (Average Response Time)</h3>
+                <ul id="top-times" class="space-y-2">
+                    <!-- Top times will be populated here -->
+                </ul>
+            </div>
+
+            <div class="flex gap-2">
+                <button id="restart-quiz"
+                    class="flex-1 bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition duration-200">
+                    New Quiz
+                </button>
+                <button id="view-setup"
+                    class="flex-1 bg-gray-600 text-white py-2 px-4 rounded-md hover:bg-gray-700 transition duration-200">
+                    Change Settings
+                </button>
+                <button id="back-to-menu"
+                    class="flex-1 bg-green-600 text-white py-2 px-4 rounded-md hover:bg-green-700 transition duration-200">
+                    Main Menu
+                </button>
+            </div>
+        </div>
+
+        <!-- Error Message -->
+        <div id="error-message" class="hidden bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-6">
+            <p id="error-text"></p>
+        </div>
+    </div>
+
+    <script src="js/multiple-choice.js"></script>
+    <script src="js/typing-game.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
