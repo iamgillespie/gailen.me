@@ -17,9 +17,12 @@ class TypingGame {
         this.timerDisplay = document.getElementById('typing-timer');
         this.progressDisplay = document.getElementById('typing-progress');
         this.totalQuestionsSpan = document.getElementById('typing-total-questions');
+        this.setupScreen = document.getElementById('typing-setup');
 
+        // Event listeners
         this.startBtn.addEventListener('click', () => this.startQuiz());
         this.answerInput.addEventListener('keypress', (e) => this.handleEnterKey(e));
+        this.initializeSpaceKeyHandler();
 
         // Special character buttons
         document.querySelectorAll('.special-char-btn').forEach(btn => {
@@ -54,6 +57,7 @@ class TypingGame {
         this.quizScreen.classList.remove('hidden');
         this.totalQuestionsSpan.textContent = this.questions.length;
 
+        this.initializeSpaceKeyHandler();
         this.displayQuestion();
     }
 
@@ -168,11 +172,10 @@ class TypingGame {
                 } else {
                     this.finishQuiz();
                 }
-            }, 500); // Brief 500ms delay to allow speech to start
+            }, 100); // Brief delay to allow speech to start
         }
     }
 
-    // Add these helper methods to the class:
     // Add these helper methods to the class:
     showWrongAnswerFeedback(question, correctAnswer, userAnswer) {
         // Create or show feedback element
@@ -182,38 +185,54 @@ class TypingGame {
             feedbackEl.id = 'wrong-answer-feedback';
             feedbackEl.className = 'fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50';
             feedbackEl.innerHTML = `
-            <div class="bg-white rounded-xl p-8 mx-4 max-w-2xl w-full shadow-2xl">
-                <div class="text-center">
-                    <div class="text-red-600 font-bold text-3xl mb-4">✗ Incorrect</div>
-                    <div class="text-xl mb-6 font-medium text-gray-800">"${question}"</div>
-                    <div class="space-y-3 text-lg">
-                        <div class="text-gray-700">Your answer: <span class="text-red-600 font-semibold">${userAnswer}</span></div>
-                        <div class="text-gray-700">Correct answer: <span class="text-green-600 font-semibold text-xl">${correctAnswer}</span></div>
-                    </div>
-                    <div class="mt-8 pt-4 border-t border-gray-200">
-                        <div class="text-sm text-gray-500">Press <kbd class="px-2 py-1 bg-gray-200 rounded text-gray-700 font-mono">Space</kbd> to continue</div>
-                    </div>
+        <div class="bg-white rounded-xl p-8 mx-4 max-w-2xl w-full shadow-2xl">
+            <div class="text-center">
+                <div class="text-red-600 font-bold text-3xl mb-4">✗ Incorrect</div>
+                <div class="text-xl mb-6 font-medium text-gray-800">"${question}"</div>
+                <div class="space-y-3 text-lg">
+                    <div class="text-gray-700">Your answer: <span class="text-red-600 font-semibold">${userAnswer}</span></div>
+                    <div class="text-gray-700">Correct answer: <span class="text-green-600 font-semibold text-xl">${correctAnswer}</span></div>
+                </div>
+                <div class="mt-8 pt-4 border-t border-gray-200">
+                    <button id="continue-btn" class="bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition duration-200 mb-2">
+                        Continue
+                    </button>
+                    <div class="text-sm text-gray-500">Or press <kbd class="px-2 py-1 bg-gray-200 rounded text-gray-700 font-mono">Space</kbd> to continue</div>
                 </div>
             </div>
-        `;
+        </div>
+    `;
             document.body.appendChild(feedbackEl);
+
+            // Add event listener for the continue button
+            document.getElementById('continue-btn').addEventListener('click', () => {
+                this.proceedAfterWrongAnswer();
+            });
         } else {
             feedbackEl.innerHTML = `
-            <div class="bg-white rounded-xl p-8 mx-4 max-w-2xl w-full shadow-2xl">
-                <div class="text-center">
-                    <div class="text-red-600 font-bold text-3xl mb-4">✗ Incorrect</div>
-                    <div class="text-xl mb-6 font-medium text-gray-800">"${question}"</div>
-                    <div class="space-y-3 text-lg">
-                        <div class="text-gray-700">Your answer: <span class="text-red-600 font-semibold">${userAnswer}</span></div>
-                        <div class="text-gray-700">Correct answer: <span class="text-green-600 font-semibold text-xl">${correctAnswer}</span></div>
-                    </div>
-                    <div class="mt-8 pt-4 border-t border-gray-200">
-                        <div class="text-sm text-gray-500">Press <kbd class="px-2 py-1 bg-gray-200 rounded text-gray-700 font-mono">Space</kbd> to continue</div>
-                    </div>
+        <div class="bg-white rounded-xl p-8 mx-4 max-w-2xl w-full shadow-2xl">
+            <div class="text-center">
+                <div class="text-red-600 font-bold text-3xl mb-4">✗ Incorrect</div>
+                <div class="text-xl mb-6 font-medium text-gray-800">"${question}"</div>
+                <div class="space-y-3 text-lg">
+                    <div class="text-gray-700">Your answer: <span class="text-red-600 font-semibold">${userAnswer}</span></div>
+                    <div class="text-gray-700">Correct answer: <span class="text-green-600 font-semibold text-xl">${correctAnswer}</span></div>
+                </div>
+                <div class="mt-8 pt-4 border-t border-gray-200">
+                    <button id="continue-btn" class="bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition duration-200 mb-2">
+                        Continue
+                    </button>
+                    <div class="text-sm text-gray-500">Or press <kbd class="px-2 py-1 bg-gray-200 rounded text-gray-700 font-mono">Space</kbd> to continue</div>
                 </div>
             </div>
-        `;
+        </div>
+    `;
             feedbackEl.classList.remove('hidden');
+
+            // Re-add event listener for the continue button
+            document.getElementById('continue-btn').addEventListener('click', () => {
+                this.proceedAfterWrongAnswer();
+            });
         }
     }
 
@@ -221,6 +240,23 @@ class TypingGame {
         const feedbackEl = document.getElementById('wrong-answer-feedback');
         if (feedbackEl) {
             feedbackEl.classList.add('hidden');
+        }
+    }
+
+    proceedAfterWrongAnswer() {
+        this.hideWrongAnswerFeedback();
+        this.answerInput.disabled = false;
+
+        // Remove the space key listener
+        if (this.spaceKeyHandler) {
+            document.removeEventListener('keydown', this.spaceKeyHandler);
+        }
+
+        if (this.currentQuestionIndex < this.questions.length - 1) {
+            this.currentQuestionIndex++;
+            this.displayQuestion();
+        } else {
+            this.finishQuiz();
         }
     }
 
@@ -341,6 +377,26 @@ class TypingGame {
         }
 
         document.getElementById('results-screen').classList.remove('hidden');
+    }
+
+    initializeSpaceKeyHandler() {
+        // Remove any existing handler first
+        if (this.spaceKeyHandler) {
+            document.removeEventListener('keydown', this.spaceKeyHandler);
+        }
+
+        this.spaceKeyHandler = (e) => {
+            // Only handle space key if wrong answer feedback is visible
+            const wrongAnswerFeedback = document.getElementById('wrong-answer-feedback');
+            if (e.code === 'Space' &&
+                wrongAnswerFeedback &&
+                !wrongAnswerFeedback.classList.contains('hidden')) {
+                e.preventDefault();
+                this.proceedAfterWrongAnswer();
+            }
+        };
+
+        document.addEventListener('keydown', this.spaceKeyHandler);
     }
 }
 
