@@ -197,7 +197,6 @@ class TypingGame {
                     <button id="continue-btn" class="bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition duration-200 mb-2">
                         Continue
                     </button>
-                    <div class="text-sm text-gray-500">Or press <kbd class="px-2 py-1 bg-gray-200 rounded text-gray-700 font-mono">Space</kbd> to continue</div>
                 </div>
             </div>
         </div>
