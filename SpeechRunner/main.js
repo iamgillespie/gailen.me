@@ -14,9 +14,6 @@ const nameScreen = document.getElementById('name-screen');
 const resultsScreen = document.getElementById('results-screen');
 const errorMessage = document.getElementById('error-message');
 const errorText = document.getElementById('error-text');
-const fileInput = document.getElementById('json-file');
-const loadFileBtn = document.getElementById('load-file');
-const fileStatus = document.getElementById('file-status');
 const multipleChoiceBtn = document.getElementById('multiple-choice-btn');
 const typingGameBtn = document.getElementById('typing-game-btn');
 const backToMenuBtn = document.getElementById('back-to-menu');
@@ -26,65 +23,57 @@ const viewSetupBtn = document.getElementById('view-setup');
 // Event listeners
 multipleChoiceBtn.addEventListener('click', () => selectGameMode('multiple-choice'));
 typingGameBtn.addEventListener('click', () => selectGameMode('typing'));
-loadFileBtn.addEventListener('click', loadJsonFile);
 backToMenuBtn.addEventListener('click', showMainMenu);
 restartQuizBtn.addEventListener('click', restartQuiz);
 viewSetupBtn.addEventListener('click', viewSetup);
 
-function selectGameMode(mode) {
-    currentGameMode = mode;
-    gameSelectionScreen.classList.add('hidden');
-    uploadScreen.classList.remove('hidden');
+// Load verbs data when the page loads
+document.addEventListener('DOMContentLoaded', function() {
+    loadVerbsData();
+});
+
+// Function to load verbs.json from /vocab/italian/
+async function loadVerbsData() {
+    try {
+        const response = await fetch('/vocab/italian/verbs.json');
+        
+        if (!response.ok) {
+            throw new Error(`Failed to load verbs data: HTTP ${response.status}`);
+        }
+        
+        const jsonData = await response.json();
+        
+        // Validate the JSON structure
+        if (!jsonData.verbs || !Array.isArray(jsonData.verbs)) {
+            throw new Error('Invalid JSON structure. Expected a "verbs" array.');
+        }
+        
+        verbsData = jsonData;
+        console.log(`Successfully loaded ${jsonData.verbs.length} verbs`);
+        
+    } catch (error) {
+        console.error('Error loading verbs data:', error);
+        showError(`Failed to load verbs data: ${error.message}. Please check the file path.`);
+    }
 }
 
-function loadJsonFile() {
-    const file = fileInput.files[0];
+function selectGameMode(mode) {
+    currentGameMode = mode;
+    lastGameType = mode;
     
-    if (!file) {
-        showError('Please select a JSON file to upload.');
+    // Check if verbs data is loaded
+    if (!verbsData) {
+        showError('Verbs data is still loading. Please wait a moment and try again.');
         return;
     }
     
-    if (file.type !== 'application/json') {
-        showError('Please select a valid JSON file.');
-        return;
+    // Go directly to setup screen
+    gameSelectionScreen.classList.add('hidden');
+    if (mode === 'multiple-choice') {
+        multipleChoiceSetup.classList.remove('hidden');
+    } else if (mode === 'typing') {
+        typingSetup.classList.remove('hidden');
     }
-    
-    const reader = new FileReader();
-    
-    reader.onload = function(e) {
-        try {
-            const jsonData = JSON.parse(e.target.result);
-            
-            // Validate the JSON structure
-            if (!jsonData.verbs || !Array.isArray(jsonData.verbs)) {
-                showError('Invalid JSON structure. The file should contain a "verbs" array.');
-                return;
-            }
-            
-            verbsData = jsonData;
-            fileStatus.textContent = `Successfully loaded ${jsonData.verbs.length} verbs!`;
-            fileStatus.className = 'mt-4 text-sm text-green-600';
-            fileStatus.classList.remove('hidden');
-            
-            // Move to appropriate setup screen
-            uploadScreen.classList.add('hidden');
-            if (currentGameMode === 'multiple-choice') {
-                multipleChoiceSetup.classList.remove('hidden');
-            } else if (currentGameMode === 'typing') {
-                typingSetup.classList.remove('hidden');
-            }
-            
-        } catch (error) {
-            showError('Error parsing JSON file: ' + error.message);
-        }
-    };
-    
-    reader.onerror = function() {
-        showError('Error reading the file.');
-    };
-    
-    reader.readAsText(file);
 }
 
 function showError(message) {
@@ -105,25 +94,6 @@ function showMainMenu() {
     
     // Show main menu
     gameSelectionScreen.classList.remove('hidden');
-}
-
-// Export shared functions and data
-window.appData = {
-    verbsData: () => verbsData,
-    showError,
-    showMainMenu,
-    
-    // NEW: Shared question limit
-    minQuestions: 5,
-    
-    // NEW: Flexible validation for question count
-    validateQuestionCount: function(questionCount) {
-        if (questionCount < this.minQuestions) {
-            this.showError(`Please select at least ${this.minQuestions} questions.`);
-            return false;
-        }
-        return true;
-    }
 }
 
 function restartQuiz() {
@@ -155,5 +125,28 @@ function viewSetup() {
     } else {
         // Fallback - show game selection
         showMainMenu();
+    }
+}
+
+// Export shared functions and data
+window.appData = {
+    verbsData: () => verbsData,
+    showError,
+    showMainMenu,
+    
+    // Track last game type
+    setLastGameType: (type) => { lastGameType = type; },
+    getLastGameType: () => lastGameType,
+    
+    // Shared question limit
+    minQuestions: 5,
+    
+    // Flexible validation for question count
+    validateQuestionCount: function(questionCount) {
+        if (questionCount < this.minQuestions) {
+            this.showError(`Please select at least ${this.minQuestions} questions.`);
+            return false;
+        }
+        return true;
     }
 };
