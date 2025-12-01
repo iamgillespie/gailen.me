@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // Function to load verbs.json from /vocab/italian/
 async function loadVerbsData() {
     try {
-        const response = await fetch('/vocab/italian/verbs.json');
+        const response = await fetch('./vocab/italian/verbs.json');
         
         if (!response.ok) {
             throw new Error(`Failed to load verbs data: HTTP ${response.status}`);
