@@ -78,7 +78,20 @@
                 <input type="number" id="question-count" min="10" max="50" value="10"
                     class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
             </div>
-
+            <!-- Add this in the multiple-choice-setup div, after the tenses checkboxes -->
+            <div class="mb-6">
+                <label class="block text-gray-700 mb-2">Game Mode:</label>
+                <div class="flex flex-col gap-2">
+                    <label class="inline-flex items-center">
+                        <input type="radio" id="standard-mode" name="game-mode" value="standard" checked class="mr-2">
+                        <span class="ml-2">Standard - Random verbs and tenses</span>
+                    </label>
+                    <label class="inline-flex items-center">
+                        <input type="radio" id="verb-forms-mode" name="game-mode" value="verb-forms" class="mr-2">
+                        <span class="ml-2">Verb Forms - All answers are different forms of the same verb</span>
+                    </label>
+                </div>
+            </div>
             <div class="mb-6">
                 <label class="block text-gray-700 mb-2">Tenses to include:</label>
                 <div class="flex flex-wrap gap-2">

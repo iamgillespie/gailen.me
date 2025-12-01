@@ -6,6 +6,7 @@ class MultipleChoiceGame {
         this.responseTimes = [];
         this.missedQuestions = [];
         this.userTimes = JSON.parse(localStorage.getItem('multipleChoiceHighScores')) || [];
+        this.currentGameMode = 'standard';
 
         // DOM elements
         this.setupScreen = document.getElementById('multiple-choice-setup');
@@ -28,20 +29,24 @@ class MultipleChoiceGame {
         const selectedTenses = Array.from(document.querySelectorAll('.tense-checkbox:checked'))
             .map(checkbox => checkbox.value);
 
+        // Get the selected game mode
+        const gameMode = document.querySelector('input[name="game-mode"]:checked').value;
+        this.currentGameMode = gameMode; // Store the game mode
+
         if (selectedTenses.length === 0) {
             window.appData.showError('Please select at least one tense to include in the quiz.');
             return;
         }
 
-        // Use shared question count validation
         if (!window.appData.validateQuestionCount(questionCount)) {
             return;
         }
 
-        this.questions = this.generateQuestions(questionCount, selectedTenses);
+        this.questions = this.generateQuestions(questionCount, selectedTenses, gameMode);
         this.responseTimes = [];
         this.missedQuestions = [];
         this.currentQuestionIndex = 0;
+        this.correctAnswers = 0;
 
         this.setupScreen.classList.add('hidden');
         this.quizScreen.classList.remove('hidden');
@@ -50,48 +55,34 @@ class MultipleChoiceGame {
         this.displayQuestion();
     }
 
-    generateQuestions(count, tenses) {
+    generateQuestions(count, tenses, gameMode) {
         const allPossibleQuestions = [];
         const verbsData = window.appData.verbsData();
+        const questions = [];
 
+        // Generate all possible questions based on selected tenses
         verbsData.verbs.forEach(verb => {
             tenses.forEach(tense => {
                 if (tense === 'infinitive') {
                     allPossibleQuestions.push({
                         type: 'infinitive',
-                        verb: verb.infinitive,
-                        correctAnswer: verb.infinitive_english,
-                        tense: 'infinitive'
+                        english: verb.infinitive_english,
+                        correctAnswer: verb.infinitive,
+                        tense: 'infinitive',
+                        verb: verb
                     });
                 } else {
                     const tenseData = verb.tenses[tense];
                     if (tenseData && tenseData.forms) {
                         Object.keys(tenseData.forms).forEach(person => {
                             const formData = tenseData.forms[person];
-
-                            // FIX: Handle different form property names
-                            let italianForm;
-                            if (formData.form) {
-                                italianForm = formData.form;
-                            } else if (formData.form_masculine) {
-                                // Use masculine form as default
-                                italianForm = formData.form_masculine;
-                            } else if (formData.form_feminine) {
-                                // Fallback to feminine form
-                                italianForm = formData.form_feminine;
-                            } else {
-                                // Skip if no form found
-                                console.warn(`No form found for ${verb.infinitive}, ${tense}, ${person}`, formData);
-                                return;
-                            }
-
                             allPossibleQuestions.push({
                                 type: 'conjugation',
-                                verb: verb.infinitive,
-                                form: italianForm,
-                                correctAnswer: formData.english,
+                                english: formData.english,
+                                correctAnswer: formData.form,
                                 tense: tense,
-                                person: person
+                                person: person,
+                                verb: verb
                             });
                         });
                     }
@@ -100,7 +91,96 @@ class MultipleChoiceGame {
         });
 
         const shuffled = [...allPossibleQuestions].sort(() => 0.5 - Math.random());
-        return shuffled.slice(0, count);
+
+        for (let i = 0; i < Math.min(count, shuffled.length); i++) {
+            const question = shuffled[i];
+
+            if (gameMode === 'verb-forms') {
+                // For verb-forms mode, generate answers from the same verb
+                question.options = this.generateVerbFormOptions(question, allPossibleQuestions);
+            } else {
+                // Standard mode - generate options
+                question.options = this.generateStandardOptionsForQuestion(question, allPossibleQuestions);
+            }
+
+            questions.push(question);
+        }
+
+        return questions;
+    }
+
+    generateVerbFormOptions(correctQuestion, allQuestions) {
+        const options = [];
+        const correctVerb = correctQuestion.verb;
+
+        // Start with the correct answer (ENGLISH translation)
+        options.push({
+            text: correctQuestion.correctAnswer, // Italian form
+            english: correctQuestion.english,    // English translation
+            isCorrect: true
+        });
+
+        // Get all other forms of the same verb (excluding the correct one)
+        const sameVerbForms = allQuestions.filter(q =>
+            q.verb === correctVerb &&
+            q.english !== correctQuestion.english
+        );
+
+        // Shuffle and pick 5 random forms from the same verb
+        const shuffledForms = [...sameVerbForms].sort(() => 0.5 - Math.random());
+        const selectedForms = shuffledForms.slice(0, 5);
+
+        // Add the selected forms as incorrect options (ENGLISH translations)
+        selectedForms.forEach(form => {
+            options.push({
+                text: form.correctAnswer,     // Italian form
+                english: form.english,        // English translation  
+                isCorrect: false
+            });
+        });
+
+        // If we don't have enough forms from the same verb, fill with random forms
+        if (options.length < 6) {
+            const randomForms = allQuestions.filter(q =>
+                q.verb !== correctVerb &&
+                !options.some(opt => opt.english === q.english)
+            ).sort(() => 0.5 - Math.random())
+                .slice(0, 6 - options.length);
+
+            randomForms.forEach(form => {
+                options.push({
+                    text: form.correctAnswer,
+                    english: form.english,
+                    isCorrect: false
+                });
+            });
+        }
+
+        // Shuffle the options so correct answer isn't always first
+        return options.sort(() => 0.5 - Math.random());
+    }
+
+    generateStandardOptionsForQuestion(question, allPossibleQuestions) {
+        // Standard mode: English options for Italian question
+        const options = [{
+            text: question.english,
+            isCorrect: true,
+            english: question.english
+        }];
+
+        // Get 5 random incorrect English translations
+        const incorrectOptions = allPossibleQuestions
+            .filter(q => q.english !== question.english)
+            .sort(() => 0.5 - Math.random())
+            .slice(0, 5)
+            .map(q => ({
+                text: q.english,
+                isCorrect: false,
+                english: q.english
+            }));
+
+        options.push(...incorrectOptions);
+        return options.sort(() => 0.5 - Math.random());
     }
 
     displayQuestion() {
@@ -108,17 +188,9 @@ class MultipleChoiceGame {
         const question = this.questions[this.currentQuestionIndex];
         this.progressDisplay.textContent = `Question ${this.currentQuestionIndex + 1} of ${this.questions.length}`;
 
-        let questionText;
-        if (question.type === 'infinitive') {
-            questionText = question.verb;
-        } else {
-            questionText = question.form;
-        }
-
-        // FIX: Ensure we have a valid question text
-        if (!questionText) {
-            console.error('Invalid question:', question);
-            // Skip to next question if this one is invalid
+        // FIX: Ensure we have a valid question
+        if (!question) {
+            console.error('Invalid question at index:', this.currentQuestionIndex);
             if (this.currentQuestionIndex < this.questions.length - 1) {
                 this.currentQuestionIndex++;
                 this.displayQuestion();
@@ -129,10 +201,22 @@ class MultipleChoiceGame {
             }
         }
 
-        this.questionText.textContent = `"${questionText}"`;
+        // BOTH MODES show Italian question - FIXED
+        this.questionText.textContent = `"${question.correctAnswer}"`;
 
-        // ADD THIS BACK - Generate and display options
-        const options = this.generateOptions(question.correctAnswer);
+        // Get options - FIXED: Show English options for both modes
+        let options;
+        if (this.currentGameMode === 'verb-forms' && question.options) {
+            // Verb-forms mode: English options (different translations of same verb)
+            options = question.options.map(opt => opt.english || opt.text || opt);
+        } else if (question.options) {
+            // Standard mode: English options (random translations)
+            options = question.options.map(opt => opt.english || opt.text || opt);
+        } else {
+            // Fallback
+            options = [question.english];
+        }
+
         this.optionsContainer.innerHTML = '';
 
         options.forEach((option, index) => {
@@ -150,32 +234,6 @@ class MultipleChoiceGame {
         this.questionStartTime = new Date();
         this.speakQuestion();
     }
-
-    generateOptions(correctAnswer) {
-        // FIX: Handle array correct answers by using the first one for display
-        const displayCorrectAnswer = Array.isArray(correctAnswer)
-            ? correctAnswer[0]
-            : correctAnswer;
-
-        const options = [displayCorrectAnswer];
-        const allEnglishTranslations = this.getAllEnglishTranslations();
-
-        // FIX: Filter out all variations of the correct answer
-        const incorrectOptions = allEnglishTranslations
-            .filter(translation => {
-                if (Array.isArray(correctAnswer)) {
-                    return !correctAnswer.includes(translation);
-                } else {
-                    return translation !== correctAnswer;
-                }
-            })
-            .sort(() => 0.5 - Math.random())
-            .slice(0, 5);
-
-        options.push(...incorrectOptions);
-        return options.sort(() => 0.5 - Math.random());
-    }
-
 
     getAllEnglishTranslations() {
         const verbsData = window.appData.verbsData();
@@ -225,11 +283,24 @@ class MultipleChoiceGame {
         const question = this.questions[this.currentQuestionIndex];
 
         let isCorrect = false;
-        if (Array.isArray(question.correctAnswer)) {
-            isCorrect = question.correctAnswer.includes(selectedAnswer);
+
+        // BOTH MODES: Check if selected English answer matches question.english
+        // Handle both single and array versions of english translation
+        // In selectAnswer - better array handling:
+        if (Array.isArray(question.english)) {
+            // Check if selected answer matches any of the array elements
+            // Also check if it matches the comma-joined version
+            const commaJoined = question.english.join(",");
+            isCorrect = question.english.some(eng => eng === selectedAnswer) ||
+                selectedAnswer === commaJoined;
         } else {
-            isCorrect = selectedAnswer === question.correctAnswer;
+            isCorrect = selectedAnswer === question.english;
         }
+
+        // DEBUG: Log what's happening
+        console.log('Selected:', selectedAnswer);
+        console.log('Correct English:', question.english);
+        console.log('Is correct?', isCorrect);
 
         const responseTime = (new Date() - this.questionStartTime) / 1000;
 
@@ -240,11 +311,13 @@ class MultipleChoiceGame {
 
         if (!isCorrect) {
             // Track wrong answers immediately
+            const correctAnswerText = Array.isArray(question.english)
+                ? question.english.join(" / ")
+                : question.english;
+
             this.missedQuestions.push({
-                question: question.type === 'infinitive' ? question.verb : question.form,
-                correctAnswer: Array.isArray(question.correctAnswer)
-                    ? question.correctAnswer.join(" / ")
-                    : question.correctAnswer,
+                question: question.correctAnswer,
+                correctAnswer: correctAnswerText,
                 userAnswer: selectedAnswer,
                 timestamp: new Date().toISOString()
             });
@@ -315,7 +388,7 @@ class MultipleChoiceGame {
 
     // ADD this new method for wrong answer feedback:
     showWrongAnswerFeedback(question, userAnswer) {
-        const questionText = question.type === 'infinitive' ? question.verb : question.form;
+        const questionText = this.currentGameMode === 'verb-forms' ? question.english : question.correctAnswer;
         const correctAnswer = Array.isArray(question.correctAnswer)
             ? question.correctAnswer.join(" / ")
             : question.correctAnswer;
@@ -351,10 +424,10 @@ class MultipleChoiceGame {
         }, 1500);
     }
 
-
     speakQuestion() {
         const question = this.questions[this.currentQuestionIndex];
-        let textToSpeak = question.type === 'infinitive' ? question.verb : question.form;
+        // FIXED: Use correctAnswer instead of question.verb/question.form
+        let textToSpeak = question.correctAnswer;
 
         if ('speechSynthesis' in window) {
             speechSynthesis.cancel();
