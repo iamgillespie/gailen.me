@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Winamp Audio Player</title>
+    <title>Winamp Audio Player - CJ Mixes</title>
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            background-color: #212529;
+            background-color: #1c1e21;
             color: #f8f9fa;
             min-height: 100vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
         }
-        /* Style the Winamp container placement */
+        /* Centering container for the Webamp application layout */
         #winamp-container {
             position: relative;
-            min-height: 400px;
+            min-height: 350px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -30,13 +30,12 @@
 <div class="container my-5">
     <div class="row justify-content-center text-center mb-4">
         <div class="col-md-8">
-            <h1 class="display-5 fw-bold text-success mb-2">Joseph's Mixes</h1>
-            <p class="text-muted">Playing directly from your local directory via Webamp</p>
-            <hr class="border-secondary">
+            <h1 class="display-6 fw-bold text-success mb-2">Creepy Jingles mix previews</h1>
+            <hr class="border-secondary opacity-25">
         </div>
     </div>
 
-    <!-- Winamp will render inside this row -->
+    <!-- Winamp Target Container -->
     <div class="row justify-content-center">
         <div class="col-auto">
             <div id="winamp-container"></div>
@@ -44,63 +43,65 @@
     </div>
 </div>
 
-<!-- Webamp Library -->
+<!-- Webamp Library Bundle -->
 <script src="https://unpkg.com/webamp@1.5.0/byo.js"></script>
 <script>
-    // Ensure Webamp is available
     const Webamp = window.Webamp;
     
     if (Webamp.browserIsSupported()) {
+        // Base path pointing directly to your repository's raw folder structure
+        const baseUrl = "https://github.com/iamgillespie/gailen.me/raw/refs/heads/main/cjmixes/";
+
         const webamp = new Webamp({
-            // Pass your specific GitHub-hosted/local files into the initial playlist
             initialTracks: [
                 {
                     metaData: { title: "Fables_002 (No Edits)" },
-                    url: "Fables_002-No-edits-from-Joseph.mp3"
+                    url: baseUrl + "Fables_002-No-edits-from-Joseph.mp3"
                 },
                 {
                     metaData: { title: "Rice_001 (Joseph Edits)" },
-                    url: "Rice_001-joseph-edits.mp3"
+                    url: baseUrl + "Rice_001-joseph-edits.mp3"
                 },
                 {
                     metaData: { title: "Trend_002 (Bury the Tambo)" },
-                    url: "Trend_002-joseph%20edits%20bury%20the%20tambo.mp3"
+                    url: baseUrl + "Trend_002-joseph%20edits%20bury%20the%20tambo.mp3"
                 },
                 {
                     metaData: { title: "Trend_002 (Joseph Edits)" },
-                    url: "Trend_002-joseph%20edits.mp3"
+                    url: baseUrl + "Trend_002-joseph%20edits.mp3"
                 },
                 {
                     metaData: { title: "Funhouse (Joseph Edits)" },
-                    url: "funhouse-joseph-edits.mp3"
+                    url: baseUrl + "funhouse-joseph-edits.mp3"
                 },
                 {
                     metaData: { title: "idnat_003 (No Plunkies V1)" },
-                    url: "idnat_003-joseph-edits-no-plunkies%20in%20verse%201.mp3"
+                    url: baseUrl + "idnat_003-joseph-edits-no-plunkies%20in%20verse%201.mp3"
                 },
                 {
                     metaData: { title: "idnat_003 (Joseph Edits)" },
-                    url: "idnat_003-joseph-edits.mp3"
+                    url: baseUrl + "idnat_003-joseph-edits.mp3"
                 },
                 {
                     metaData: { title: "Stayhigh_001 (Joseph Edits)" },
-                    url: "stayhigh_001-joseph%20edits.mp3"
+                    url: baseUrl + "stayhigh_001-joseph%20edits.mp3"
                 },
                 {
                     metaData: { title: "Stayhigh_001 (Ooohs & Aaaahs Mid Tweak)" },
-                    url: "stayhigh_001-joseph%20edits_001%20ooohs%20and%20aaaaahs%20middle%20a%20little%20less%20turned%20down.mp3"
+                    url: baseUrl + "stayhigh_001-joseph%20edits_001%20ooohs%20and%20aaaaahs%20middle%20a%20little%20less%20turned%20down.mp3"
                 },
                 {
                     metaData: { title: "Stayhigh_001 (Ooohs & Aaaahs -9db)" },
-                    url: "stayhigh_001-joseph%20edits_001-lowered%20ooohs%20and%20aaaahs%20by%209db.mp3"
+                    url: baseUrl + "stayhigh_001-joseph%20edits_001-lowered%20ooohs%20and%20aaaahs%20by%209db.mp3"
                 }
             ],
         });
 
-        // Render the player into the Bootstrap container layout
+        // Inject the Winamp frames right into our Bootstrap wrapper
         webamp.renderWhenReady(document.getElementById('winamp-container'));
     } else {
-        document.getElementById('winamp-container').innerText = "Webamp is not supported in this browser.";
+        document.getElementById('winamp-container').innerHTML = 
+            `<div class="alert alert-danger" role="alert">Webamp is not supported by this browser.</div>`;
     }
 </script>
 
