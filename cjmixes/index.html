@@ -15,7 +15,7 @@
             flex-direction: column;
             justify-content: center;
         }
-        /* Winamp automatically centers inside its parent wrapper */
+        /* Webamp centers neatly inside this block element */
         #winamp-container {
             position: relative;
             min-height: 400px;
@@ -29,7 +29,7 @@
     <div class="row justify-content-center text-center mb-4">
         <div class="col-md-8">
             <h1 class="display-6 fw-bold text-success mb-2">Joseph's Mixes</h1>
-            <p class="text-muted small">Streaming directly via Webamp & GitHub Raw Storage</p>
+            <p class="text-muted small">Streaming natively from local repository directory</p>
             <hr class="border-secondary opacity-25">
         </div>
     </div>
@@ -42,59 +42,57 @@
     </div>
 </div>
 
-<!-- Load Webamp natively as a JavaScript Module, matching captbaritone's official spec -->
+<!-- Load Webamp as an ES Module -->
 <script type="module">
     import Webamp from "https://unpkg.com/webamp@^2";
 
-    // Base path pointing directly to your repository's raw folder structure
-    const baseUrl = "https://github.com/iamgillespie/gailen.me/raw/refs/heads/main/cjmixes/";
-
     const webamp = new Webamp({
+        // FIXED: Using relative paths since HTML and MP3s live together in /cjmixes/
         initialTracks: [
             {
                 metaData: { title: "Fables_002 (No Edits)" },
-                url: baseUrl + "Fables_002-No-edits-from-Joseph.mp3"
+                url: "./Fables_002-No-edits-from-Joseph.mp3"
             },
             {
                 metaData: { title: "Rice_001 (Joseph Edits)" },
-                url: baseUrl + "Rice_001-joseph-edits.mp3"
+                url: "./Rice_001-joseph-edits.mp3"
             },
             {
                 metaData: { title: "Trend_002 (Bury the Tambo)" },
-                url: baseUrl + "Trend_002-joseph%20edits%20bury%20the%20tambo.mp3"
+                url: "./Trend_002-joseph%20edits%20bury%20the%20tambo.mp3"
             },
             {
                 metaData: { title: "Trend_002 (Joseph Edits)" },
-                url: baseUrl + "Trend_002-joseph%20edits.mp3"
+                url: "./Trend_002-joseph%20edits.mp3"
             },
             {
                 metaData: { title: "Funhouse (Joseph Edits)" },
-                url: baseUrl + "funhouse-joseph-edits.mp3"
+                url: "./funhouse-joseph-edits.mp3"
             },
             {
                 metaData: { title: "idnat_003 (No Plunkies V1)" },
-                url: baseUrl + "idnat_003-joseph-edits-no-plunkies%20in%20verse%201.mp3"
+                url: "./idnat_003-joseph-edits-no-plunkies%20in%20verse%201.mp3"
             },
             {
                 metaData: { title: "idnat_003 (Joseph Edits)" },
-                url: baseUrl + "idnat_003-joseph-edits.mp3"
+                url: "./idnat_003-joseph-edits.mp3"
             },
             {
                 metaData: { title: "Stayhigh_001 (Joseph Edits)" },
-                url: baseUrl + "stayhigh_001-joseph%20edits.mp3"
+                url: "./stayhigh_001-joseph%20edits.mp3"
             },
             {
                 metaData: { title: "Stayhigh_001 (Ooohs & Aaaahs Mid Tweak)" },
-                url: baseUrl + "stayhigh_001-joseph%20edits_001%20ooohs%20and%20aaaaahs%20middle%20a%20little%20less%20turned%20down.mp3"
+                url: "./stayhigh_001-joseph%20edits_001%20ooohs%20and%20aaaaahs%20middle%20a%20little%20less%20turned%20down.mp3"
             },
             {
                 metaData: { title: "Stayhigh_001 (Ooohs & Aaaahs -9db)" },
-                url: baseUrl + "stayhigh_001-joseph%20edits_001-lowered%20ooohs%20and%20aaaahs%20by%209db.mp3"
+                url: "./stayhigh_001-joseph%20edits_001-lowered%20ooohs%20and%20aaaahs%20by%209db.mp3"
             }
         ],
     });
 
-    // Render cleanly into the wrapper container
+    // Render inside the Bootstrap shell
     webamp.renderWhenReady(document.getElementById('winamp-container'));
 </script>
 
