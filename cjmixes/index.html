@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Winamp Audio Player - CJ Mixes</title>
-    <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
@@ -34,7 +33,6 @@
         </div>
     </div>
 
-    <!-- Winamp Target Container -->
     <div class="row justify-content-center">
         <div class="col-12 d-flex justify-content-center">
             <div id="winamp-container"></div>
@@ -42,49 +40,67 @@
     </div>
 </div>
 
-<!-- Load Webamp as an ES Module -->
 <script type="module">
     import Webamp from "https://unpkg.com/webamp@^2";
 
-    const webamp = new Webamp({
-        // FIXED: Using relative paths since HTML and MP3s live together in /cjmixes/
-        initialTracks: [
-            {
-                metaData: { title: "You Don't Trend (Bury the Tambo)" },
-                url: "./Trend_002-joseph%20edits%20bury%20the%20tambo.mp3"
-            },            
-            {
-                metaData: { title: "I Don't Need a Thing" },
-                url: "./idnat_003-joseph-edits-no-plunkies%20in%20verse%201.mp3"
-            },
-            {
-                metaData: { title: "Stay High (Ooohs & Aaaahs Mid Tweak)" },
-                url: "./stayhigh_001-joseph%20edits_001%20ooohs%20and%20aaaaahs%20middle%20a%20little%20less%20turned%20down.mp3"
-            },
-            {
-                metaData: { title: "Stay High (Ooohs & Aaaahs -9db)" },
-                url: "./stayhigh_001-joseph%20edits_001-lowered%20ooohs%20and%20aaaahs%20by%209db.mp3"
-            },
-            {
-                metaData: { title: "Rice" },
-                url: "./Rice_001-joseph-edits.mp3"
-            },
-            {
-                metaData: { title: "Nü Fables (No Edits)" },
-                url: "./Fables_002-No-edits-from-Joseph.mp3"
-            },
-            {
-                metaData: { title: "Funhouse" },
-                url: "./funhouse-joseph-edits.mp3"
-            }
-        ],
-    });
+    // Path to your playlist file relative to this HTML file
+    const playlistUrl = "./The Creepy Jingles - Against All Opps EP.m3u8";
 
-    // Render inside the Bootstrap shell
-    webamp.renderWhenReady(document.getElementById('winamp-container'));
+    async function loadPlaylistAndStartWebamp() {
+        try {
+            // 1. Fetch the .m3u8 file text
+            const response = await fetch(playlistUrl);
+            if (!response.ok) throw new Error(`Failed to fetch playlist: ${response.statusText}`);
+            const text = await response.text();
+
+            // 2. Parse the M3U8 string into Webamp-ready track objects
+            const lines = text.split(/\r?\n/);
+            const tracks = [];
+            let currentTitle = "Unknown Track";
+
+            for (let i = 0; i < lines.length; i++) {
+                const line = lines[i].trim();
+                
+                if (line.startsWith("#EXTINF:")) {
+                    // Extract track title (everything after the comma)
+                    const commaIndex = line.indexOf(",");
+                    if (commaIndex !== -1) {
+                        currentTitle = line.substring(commaIndex + 1);
+                    }
+                } else if (line && !line.startsWith("#")) {
+                    // This line is the URL/filename. 
+                    // encodeURI handles spaces in filenames dynamically.
+                    const fileUrl = line.startsWith("http") ? line : `./${encodeURIComponent(line)}`;
+                    
+                    tracks.push({
+                        metaData: { title: currentTitle },
+                        url: fileUrl
+                    });
+                    
+                    // Reset fallback for next iteration
+                    currentTitle = "Unknown Track";
+                }
+            }
+
+            // 3. Initialize Webamp with the dynamically parsed tracks
+            const webamp = new Webamp({
+                initialTracks: tracks
+            });
+
+            // Render inside the Bootstrap shell
+            webamp.renderWhenReady(document.getElementById('winamp-container'));
+
+        } catch (error) {
+            console.error("Error setting up Webamp playlist:", error);
+            document.getElementById('winamp-container').innerHTML = 
+                `<div class="alert alert-danger text-center">Failed to load playlist: ${error.message}</div>`;
+        }
+    }
+
+    // Run the setup
+    loadPlaylistAndStartWebamp();
 </script>
 
-<!-- Bootstrap 5 JS Bundle -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
