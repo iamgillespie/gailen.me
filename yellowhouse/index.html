@@ -1,1 +1,106 @@
-<!--PLACEHOLDER FILE-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winamp Audio Player - CJ Mixes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #1c1e21;
+            color: #f8f9fa;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        /* Webamp centers neatly inside this block element */
+        #winamp-container {
+            position: relative;
+            min-height: 400px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container my-5">
+    <div class="row justify-content-center text-center mb-4">
+        <div class="col-md-8">
+            <h1 class="display-6 fw-bold text-white mb-2">Valorie Engholm - Yellow House (Remastered)</h1>
+            <p class="small text-white">Yellow House being played on Winamp just as it would have in 2006. Only this time it's remastered!</p>
+            <hr class="border-secondary opacity-25">
+        </div>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-12 d-flex justify-content-center">
+            <div id="winamp-container"></div>
+        </div>
+    </div>
+</div>
+
+<script type="module">
+    import Webamp from "https://unpkg.com/webamp@^2";
+
+    // Path to your playlist file relative to this HTML file
+    const playlistUrl = "./Valorie Engholm - Yellow House (Remastered).m3u8";
+
+    async function loadPlaylistAndStartWebamp() {
+        try {
+            // 1. Fetch the .m3u8 file text
+            const response = await fetch(playlistUrl);
+            if (!response.ok) throw new Error(`Failed to fetch playlist: ${response.statusText}`);
+            const text = await response.text();
+
+            // 2. Parse the M3U8 string into Webamp-ready track objects
+            const lines = text.split(/\r?\n/);
+            const tracks = [];
+            let currentTitle = "Unknown Track";
+
+            for (let i = 0; i < lines.length; i++) {
+                const line = lines[i].trim();
+                
+                if (line.startsWith("#EXTINF:")) {
+                    // Extract track title (everything after the comma)
+                    const commaIndex = line.indexOf(",");
+                    if (commaIndex !== -1) {
+                        currentTitle = line.substring(commaIndex + 1);
+                    }
+                } else if (line && !line.startsWith("#")) {
+                    // This line is the URL/filename. 
+                    // encodeURI handles spaces in filenames dynamically.
+                    const fileUrl = line.startsWith("http") ? line : `./${encodeURIComponent(line)}`;
+                    
+                    tracks.push({
+                        metaData: { title: currentTitle },
+                        url: fileUrl
+                    });
+                    
+                    // Reset fallback for next iteration
+                    currentTitle = "Unknown Track";
+                }
+            }
+
+            // 3. Initialize Webamp with the dynamically parsed tracks
+            const webamp = new Webamp({
+                initialTracks: tracks
+            });
+
+            // Render inside the Bootstrap shell
+            webamp.renderWhenReady(document.getElementById('winamp-container'));
+
+        } catch (error) {
+            console.error("Error setting up Webamp playlist:", error);
+            document.getElementById('winamp-container').innerHTML = 
+                `<div class="alert alert-danger text-center">Failed to load playlist: ${error.message}</div>`;
+        }
+    }
+
+    // Run the setup
+    loadPlaylistAndStartWebamp();
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
