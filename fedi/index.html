@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FilterVerse</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎬</text></svg>">
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+
+    <div id="login-view">
+        <h2 style="margin-bottom: 20px;">Fediverse Shorts</h2>
+        <input type="text" id="instance-url" placeholder="mastodon.social" value="mastodon.social">
+        <button onclick="startLogin()">Connect Account</button>
+        <p class="auth-note">
+            This app uses an out-of-band login. You will be redirected to your instance to authorize, then asked to paste a code back here.
+        </p>
+    </div>
+
+    <div id="app-view">
+        
+        <div class="filter-bar">
+            <div class="feed-selector">
+                <button class="filter-btn active" data-feed="local" onclick="setFeedSource(this)">This Server</button>
+                <button class="filter-btn" data-feed="federated" onclick="setFeedSource(this)">Other Servers</button>
+            </div>
+            <button class="filter-btn active" data-filter="all" onclick="setFilter(this)">All</button>
+            <button class="filter-btn" data-filter="video" onclick="setFilter(this)">Video</button>
+            <button class="filter-btn" data-filter="image" onclick="setFilter(this)">Image</button>
+            <button class="filter-btn" data-filter="music" onclick="setFilter(this)">🎵 Music</button>
+            <button class="filter-btn" data-filter="text" onclick="setFilter(this)">Text</button>
+            <button class="filter-btn" onclick="toggleAdvancedFilters()" style="background:#444;">⚙️</button>
+
+            <label class="toggle-label" id="autoplay-toggle-label">
+                <input type="checkbox" id="autoplay-toggle" checked onchange="toggleAutoplay()">
+                Autoplay
+            </label>
+        </div>
+
+        <div id="hashtag-bar">
+            <button class="hashtag-chip" data-hashtag="freeform" onclick="setHashtag(this)">🔥 Firehose</button>
+            <!-- Hashtag chips will be populated here by JavaScript -->
+        </div>
+
+        <div id="advanced-filters-panel">
+            <div class="filter-row" id="row-nsfw">
+                <span class="filter-row-label">NSFW</span>
+                <label class="toggle-label">
+                    <input type="checkbox" id="nsfw-toggle" checked onchange="applyFilters()">
+                    Filter out NSFW content
+                </label>
+            </div>
+            <div class="filter-row" id="row-video-len">
+                <span class="filter-row-label">Max Length (min)</span>
+                <input type="number" class="length-input" id="vid-len-max" placeholder="Unlimited" min="0" step="1" oninput="applyFilters()">
+                <span style="color: #666; font-size: 11px; margin-left: 4px;">(blank = unlimited)</span>
+            </div>
+            <div class="filter-row" id="row-music-services">
+                <span class="filter-row-label">Music Services</span>
+                <div class="music-services-grid" id="music-services-grid"></div>
+            </div>
+            <div class="filter-row" id="row-image">
+                <span class="filter-row-label">Image</span>
+                <button class="adv-filter-btn" data-img="has-alt" onclick="setAdvFilter(this, 'img')">Has Alt Text</button>
+                <button class="adv-filter-btn" data-img="no-alt" onclick="setAdvFilter(this, 'img')">No Alt Text</button>
+            </div>
+            <div class="filter-row" id="row-text">
+                <span class="filter-row-label">Text</span>
+                <button class="adv-filter-btn" data-text="has-media" onclick="setAdvFilter(this, 'text')">With Media</button>
+                <button class="adv-filter-btn" data-text="long" onclick="setAdvFilter(this, 'text')">Long Posts (>280)</button>
+            </div>
+        </div>
+
+        <div class="feed" id="feed-container">
+            <div class="loading">Loading public timeline...</div>
+        </div>
+
+        <div class="search-bar">
+            <input type="text" id="search-query" placeholder="Search the fediverse..." onkeypress="handleSearchKey(event)">
+            <button onclick="performSearch()">Go</button>
+            <button onclick="reloadFeed()" style="background:#444; padding:12px 15px;">🔄</button>
+        </div>
+    </div>
+
+    <div id="reply-modal">
+        <div class="modal-content">
+            <h3>Reply to Post</h3>
+            <div class="reply-context" id="reply-context"></div>
+            <textarea id="reply-text" placeholder="Write your reply..."></textarea>
+            <div class="modal-actions">
+                <button class="cancel-btn" onclick="closeReplyModal()">Cancel</button>
+                <button class="send-btn" id="send-reply-btn" onclick="sendReply()">Send Reply</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="status-msg"></div>
+
+    <script src="src/js/services.js"></script>
+    <script src="src/js/hashtags.js"></script>
+    <script src="src/js/app.js"></script>
+</body>
+</html>
